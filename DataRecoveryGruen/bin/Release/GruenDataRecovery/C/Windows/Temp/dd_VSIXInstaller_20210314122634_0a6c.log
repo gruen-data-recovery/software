@@ -1,0 +1,161 @@
+14.03.2021 12:26:34 - Microsoft VSIX Installer
+14.03.2021 12:26:34 - -------------------------------------------
+14.03.2021 12:26:34 - vsixinstaller.exe version:
+14.03.2021 12:26:34 - 16.8.3036
+14.03.2021 12:26:34 - -------------------------------------------
+14.03.2021 12:26:34 - Command line parameters:
+14.03.2021 12:26:34 - C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\VSIXAutoUpdate.exe
+14.03.2021 12:26:34 - -------------------------------------------
+14.03.2021 12:26:34 - Microsoft VSIX Auto Update
+14.03.2021 12:26:34 - -------------------------------------------
+14.03.2021 12:26:35 - VSIXAutoUpdate :  Supported products on the machine
+14.03.2021 12:26:35 - 		Visual Studio Community 2019
+14.03.2021 12:26:35 - VSIXAutoUpdate :  Supported products applicable to auto update
+14.03.2021 12:26:35 - 		Visual Studio Community 2019
+14.03.2021 12:26:35 - Try downloading compatibility list file.
+14.03.2021 12:26:36 - Parsing compatibiliy list file - C:\WINDOWS\TEMP\CompatibilityList.xml
+14.03.2021 12:26:36 - Blocking processes:
+14.03.2021 12:26:36 - No extensions found for auto update off in compatibility ist
+14.03.2021 12:26:36 - Capping recursion at 5 directories in each extension root due to 'default limit'.
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\0ufvjvfw.v4w\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\1fseqwi5.c1l\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\2wrxgso5.3co\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\4hxf43nx.gv1\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\5emfloyp.le4\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\a5brsgn3.zxr\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\ahdlch2w.npb\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\anyvp0u0.xdj\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress ORM Data Model Wizard\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress.DeploymentTool\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress.TemplateGallery.v20.2\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress.TemplateGallery.Xpo.v20.2\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress.XtraReports.v20.2\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExtreme.AspNet.Mvc_20.2\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\edljzsai.0ow\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\esiuwmsy.sg3\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\faou3gw5.ov1\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\feb0tx3k.wnx\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\ha3gujbo.tie\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\i2kcwukx.mq0\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\i4oe4eqi.gck\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\jkzdf0pw.lhk\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\kfzxucra.rwr\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\l2apbmjq.jy3\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\lmwg0zlb.ktd\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\odfln1eo.n4h\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\qnd4ws1k.3yr\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\rcjwigyo.tbb\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\rv5ofgut.3dm\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\s1vxjxmi.mb5\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\TestPlatform\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\txxba55a.20s\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\xt54bhr0.qqm\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\ywzmaqm2.tjj\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\yz3did4p.mhx\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress\DevExpress.Win.LayoutAssistant.v20.2\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress\DevExpress.XtraReports.RepxPackage\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress\Menu\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress\ProjectConverter\extension.vsixmanifest'
+14.03.2021 12:26:36 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\DevExpress\VSMenuIntegration.v20.2\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\.NetNative\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ClickOnce\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ConnectedServices\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\IntelliCode\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\LiveShare\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ManagedProjectSystem\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Microsoft Office 365 Connected Service\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Portable Library Tools\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Publish\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\TemplateEngine\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\WCF Connected Service\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web Tools\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web Tools Shared\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Windows Azure Tools\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Windows Azure Tools Diagnostics\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\CodeSense\Framework\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ConnectedServices\Authentication\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ConnectedServices\KeyVault\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\ConnectedServices\Storage\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Modeling\16.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SQLDB\SSDTUpdate\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SQLDB\Vsix\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SQLEditor\Vsix\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Unit Test Explorer\TestWIExtension\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Visual Studio MPF\10.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Visual Studio MPF\11.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Visual Studio MPF\12.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Visual Studio MPF\14.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web\Mvc\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web Tools\Azure\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web Tools\Library Manager\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Windows Azure Tools\Common\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Windows Azure Tools\RemoteDebugger\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Workflow Manager\1.0\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\BCS\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\BDC\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\Bootstrapper\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\ControlsIntelliSense\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\Explorer\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\ListDesigner\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\Project\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\RemoteCommands\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\WFDesignerSupport\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web\Mvc\Scaffolding\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\Web Tools\Azure\Package\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\EXTENSIONS\Microsoft\SharePoint\Extensions\V5\Explorer\extension.vsixmanifest'
+14.03.2021 12:26:37 - Capping recursion at 5 directories in each extension root due to 'default limit'.
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\DataDesign\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\Microsoft\CallHierarchy\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\Microsoft\ClientDiagnostics\extension.vsixmanifest'
+14.03.2021 12:26:37 - Found 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDI	·3Éü∏wQù ñ≈ŸW‚à∑Ÿ“ «fqka‹ﬂ˘´u˜C ÙwëÔááàÒá·m.ﬁ€+<¬ﬁÊ¶ 2ƒ«hq'ßB≈√€;BØyÏÖ=¬˚öµû◊$ˆêåÈ#;!6-Ÿ—˝+_ó0ß5«}q”#Üÿ%A}ä“N∏«òì¨*Ìs<ï°ÍÊ’e]	sÇKIÛ˘‹ˆLı¬≠d/ıô\¢Ú€ „ˆÒŒé7—»1‚Rü‹åñ;è‰p≤_±êÊ ò∑Î∫ƒF¿G7^Fczà>sK-4*&UØÇ\Z¿Å∂pÇê ∑üNß¯éa2ê˛<ø°‰Ux”nœÒˆ°Ì4bS†|Îç;Vê
+‡2Ω€ÊØπLÃ’}˘k,ó÷Í«!Øwâ~\ç∞3û“KÚ£∏Q+”ª#ÚŒ£∞‘C,\Å¬´K¡KÁÄœzBu©GP∂°BtÏÃn£ﬂÜ∏z@W.øÆ∫˛ô’•ü◊´’®5ˇÜπ¢9çó	~lúuè‹ÒÀ√˙®yE˛öVZròm¸…æ__#…¬é¶	rãiyœ4ä ßûûØ6ÑçŒ¡ªÓ¥çih+lÁƒ{÷ÆuÒNOäW˚∆r-µÜ™ÌI¨R~Î={€°'≈?=gŸ2°Y∂8_ã#9LÒ1C/ΩßD\ﬂËx≠?˝eõ‘g-ùlÚ—Iø©≥ì<ó,«<]Æ=ˇﬂ &≤˙<ªÙ·dÏmﬁËdl|˚ø“”YïGWÌlgj Hõˇm÷:ÇåêøsÜdi˝æJW⁄5ËeÄØ“(ïA4qÊ,UúG&œ≠$+˝Ùx˙?“ÌìçvêG∆xÚ„_ÅÖÔ±<‰c z_w·'\]˙≤ØØn?Ôs@≤	y6<rî{Ì¿Kbx5µ'ÿ¶Åc∂eµ®÷8öfŸ∂P◊¸'±KòtıLCgÿWY∏¿ZDﬁö/»â!‡ú#_nÛ^nT∂∫‰c•FƒéúÔ˙∑û™^Íß7kõNœ äeÑÂg‹Xy(ˆx¢9º`_”±zX°@—ƒ€{◊∏âûQÂ]π‰⁄õ&ÆÚ≈V©ìSÈπQ8	ƒ"w&—†Â’	>5Æ∂póU'Ì˚£µó5ë
+EÓ˘–ıÂÆ>∂÷âÍc–Ò¡CLE2~“7üi}VxÈ˚UÚq^èö‚]—Õ%µ=Ÿohπ¬iwÎ”Œ<ÔV˚“l^Ô"…tD~ûò®&FŒŸhÓà⁄I™wT`\ÛúlUô<⁄e$_•∞˘¸)dÔSy≥Dæí¥~¬SÙÓ.l3ÜÜË˙Ú)âˆ»+'t≤Kæe—©∫⁄∫ßFwè]´€AÓˇH
+aJ•®—”ﬂB`Äó´Ìæ22Ù˘∏ö›ªÅ™Ü‘®Î¸w/VîEƒû∞’‚”@ı¢–¸Ÿ'2U%ΩÉù≤
+-1*)yƒòˇñ*πQ{+2‰[Y÷5Ó”∫&L∏‡Ã¨¬ÕıPΩ¨LzÅrFaª≠ul≤,≈±˚l<ÈæñÒ˚øí.&H^Hj˘à~à©Örf‰a§v›≠ü¯üÇM™ÎÅ¨˝kÕo≥ˆÛmÿ1◊w—He‚]]gíÃÌ˘±Ô u/ìy3˝páÆ1j‘3oTº⁄Ü ÖNfZEjO23Ø.±“+«Ù¯±¥:WZìr»XŸÊn∞ni!)Ôè"•—Â1”(Kﬂ§£ì£@
+6ˆR¢/´∏$&ô‹öì’ÌJŒK≈c›¢‚≤ìøj-.CpΩ‹‘ÙM	_˝*”˚D´\Áøﬁ˝%˚
+bC¸_d∑Yì”É¿Kwæ9˚ÁM†ˆNp ‹UÎstÙÈïÍ‰GfSékaÉçXÀv¥≤—öå
++h)A/¥nN”Í Uª«©˚YÀ‘˝“K;ò(zœm†ƒˇ!ﬂ-√Â´‰#í~\9Yn Ω —	Ò\j∆óÍMÃÎRú»≥!pË)ˆ˛ü^HÚÅØ%ywô„‡UóJÄàˆ+J´ã´–LØ|n∂K'3@à]!!ËÃ2∂ÀFíÅhÑY»'D˝ÒìŒòUJ±0$ffƒ*>ÆÈ}áóïÍ8ÙØ÷mZ‹ÄøºŸ˜˘ﬁ≈ªı¶›ëâÜ¯f;ûëÍÉñÆ|K¥§a≤‡ÂØôü,mçûMt]ªÚ&’&wg\çE≥ÒŸçÅèôt}ﬁ);”àÕX`œ˙q
+S€Ï6T[ë˙)ä?fæ≥≠s€*˛•œ~-kÄ'öPYIëßbªI´QÃÿÕÊµÓr’Øo´Õÿ§œñµmI”Sﬂ{ı11ÿ·æ>$Ü5VÛg£üˆ'Ç5íêä≈ï{»ì¶G%àà à$é2'2JSÑt´>∏R§≠¬Â∆æ¥6™Z)XdÃßÔj<´û∏TÓ8´|∫oµ@È˛Ø∫%∫¸ﬁ[	?ø˘‰NºÔÚt2x*ú†ÍX∂,w—©®H4V€GÎª9k;‰ñº‹_Q”"‰Leõ¿":”?R6ST«W¸Lûa¸Ë“k‹„ã‰[a¿√Á◊√ßÎå…Bùk~ó‰Ã(˘n(8mµ¥àN) ºËù>Èﬂ˛ØÆ~¶¢óâOX;˚∂9å›ß2	te . *#ámí2 Ä¬à_
+f-ˆû„JÛ∫ø"ØSøàu–B≥˚|¶˝ûûÙÔ”v≠˜õ€˛Kg{Äº¬øÈ¢ò Î“Q&T⁄—ˆ≈’b≈“†m®ŒèœÓ–·SV'†jvƒƒ^±%úﬁ‘â7\˚n√5pG‘12õÙ≥`>(ÌW¯"MÕóI[u∞∆\œ$NOy|µF’–ªIƒ0EÙƒaá«Sºh§Eôyõ`ml›muÈ√x≥*–ıK	†˛]˛Ó,≠‘+!!õà•™l>-X
+t◊äVáπ^∑d`3<¶=Nñò^µ◊‹∑#ÂîüÀ]8ı™õw¿eM»√ä—Ôx7›÷◊!Y#Z&Úe9Âs◊OÜ*T)¬5˚2UJG˛jíÈM:è=RØìQZ≤±r&u5]lÑ:(ó#_íËî®:·TØu%ÒÅ}‡B∏Ö|ÇhŸWñEC+ˇS÷[∞m˝Uv'<ÃkL¨\Óí^‘VJïR‰˛ÿJVö%òÔñ⁄Ç‹Õç.#€j·AU√Å≥Ødg£Ùâ7àÊ¯¢Y|»ˆ◊’Ú•ŒúX0#ﬂ≤¨¶gW∫EæàKˇ¶7W≠∑Ù:˙kö«v(mw}≤xNüò≈õË8Oã	è-D∞∆m⁄Ö†.#‡ÑÍ«^Eé∂Ï.A±°˘)>øŸzS8B\˘pÅ§~…aù⁄‰BíKÃ1Vπ—9||¡hœE%nAã.júò≈ÆÍ7Dë#%ŸäN©L®ˆ±xvÕ^ÁnªAú,bZãrõiÕy*¸.{¨øiSßDãåπú0t£qIËRl˛ı⁄‰˜À≈êH›Ãen$◊h<eì‹x%s`ã¸\Ñy)=A±´ú◊∏ÍÑ‚hW{ä/Á2!l„!U¸8ù ≤•q|Ú5˜îΩ≠ABñ&Û°Ò¥d”¨Ï9mH]hôVf∑·ão´±ÆØJç‡Ã“$Íf_ã∂∂˛&K’Tß∞ä⁄Añ›ÜhL¨
+∂cüqáHj‡[D9…ΩÜ4f`¬†ÖÊ310Ì+ªN}yÆ·`#/ûÍöÊBÊ`i¢8`õ·úMoeª#,ÔP›◊%ŒäTÁAñÁ¸ÈÂ_„—J¬2{›d,Õ∏q
+bPÓ®ôÿs-4|r˚ïÜﬁê∏°sÀHWgäueÑÙ•‰BuBwhíƒq§ 4Çâ5…ó⁄##f/kì[1ñ	m)ù@*MÖ¨sDúÜøÙs?◊÷ß¶˜«A˙∞f®¡ªÑ À-‡ä3 ìWÂFÇi™SÔÑ:-∂opËû©¸ƒöÔjÌ\€ßÉ°N+Ì^&Aå©áY""ò9§õ„êÿùl¸ò@NJsPçßò49≠˛¯*›B∂ìSE¯ŒFp¯?Ãœv#‰HPz„È‚‚ÔøF˝Y˝Æµ—ﬂº8µ¥Ær?7åÈ®“Âó¸hˆÃ?…2µ‘‘Wx˙Ä"°“_'¯ﬂGï“¢ w˚8ó†~Ù—Â¯%Axî¨jùûD÷EúI3@]o”“¨*ˇﬂ¿:RáÏ%òÊÅóˆé<i“i
+ı89«íóëÑõN›Ãà∑¶Ø40åÁˇ°_òûay“∑Aãf˛¥24Êéà˛Ø-IIá~úÈ¢ëŸ≈õÚ)“·d◊hÉ=Ù1+„°)ﬂSöã†·ËÊ.†RDÆﬁ{]5÷Ã÷øπºv—ı n°JN˝úËd∑%‰wd∏C/NÎÿU»øüÒ¯xO^_	˚AóÛ’âèËé8‘#bøV5né™ÑÚ…∆N.ttµä°BÃÀâ>—<ß¡±r°Ö∏,¸c¯√¸ª¯√/Ç†W&N]¬Ã≠]öø2∫Ù0êªé3 ∞Ô-ëˆÊ<r´œÒºÕﬁŸ‡8s•EÉ%V·√íã0ívÀ(7)ﬁΩ’k∑—mb‹34=Gó¥ImôÔ∆ì9´Q'Í’¡»a|<ÒjØÛÄrí Ó*ndw¨—∏∑^ëdŸ
+d7ƒ”÷ºöNs∫∞‘=†]AV,é±L[Caî±Zzº^&¬ì–ï@√àfÛ•è`˘Œ÷Íl—ã∂})/£’à»ùÀÑÆëz≤Vÿ{÷+ë,⁄UMCF°]ÃÂ•D6È™º†ï∂?`&z¸Á∫ŸcÆ?À`PÉá-€ØFP7‹7Ωr/AÃ6We8ı¢»WlKÜ@ﬂxC®ˆû±<Pâa¶Ω$¶Ë,∞	∫¥“&,N8€ÃÌE5Ôæé›ŒuÇ·Á<ñ’?»/ZÇÅx7b}eè“◊˜∫™·Üˇ=≤¸BóAZ3œ®2_Œ¿üÀ÷ˆõ·√íYÇΩr¢ÑÿØµKdLV|Vµ±$pqÆhf	röWØÌG6øG¬˚¶Í‡Pª$˚Åì˙Á‚bI˛lèß(q˙óÑfê)PÒ±2ﬂ˚å'≈Ó‰ “N=ù]u¬Ó›ﬂJRpèªØ `XÙ¢¢…éÚG<v-∫Hú˘(mZ¨ß!ø‘8ÀW7 3áCäÔ*Nî‹
+Êﬁ(WnjoÄ£`vÁ<LŸù©>Ü,ò“vsÎ√‰Â|Á‘g¶eW|N"8–çßÍªZÇ«à∏≠sÊxÂ¢è≈áﬂ˛®…jí‘v-0I≠™AmP÷°øá± æç’}5V<˜∫Yo§£sÄ3ÈÌÈ¨qï&Rn@oæmP≤
+LÁ_€x?à46C[¢ıÈø√§E—ˆgòîπ≥¬ÎÎµ-‚›õU®˝˚6-)2Ω∏„Ô•Kƒwá=dî´Ä∂Û€â˙∏ô∏ı6QÆlÂ[c_ÑÌÿ◊.\ö-K\ÿÆ◊ß´á]ˇÍ∏R‚ÚÏ-¨…<Û	™O0ISó•„≠¨êß@Y:]B”c+•q%Uëw<ﬂÌ+±î∆x›Ø∏ﬂu†–nπÒÑ’≤kè—@ÄÖ⁄—/î
+Ü™=J¬»€ûb~€ÆxıHõaV¥x5ñÿ‘eTåé¡∑E ¡?®µi◊8	ﬂ˙§æ<LßÊ®∏˚+çÈÇÈÜÚ˘©\E/¥πO^éÙ(£Œø¿0O7aÿï”ø~ÂtÆÿK˘∂ëﬂÇ∆ïC\é¶7¨NØ·ŸbRôÛÖÒƒÚ˘,t˝X)°i„ŒXVÓ2˜Lº5Ï•bo°^µÏöµë>ùbhQ¯§<Ωz,t=÷æùÀ=„%<`ı>‹€4˜V´é¡Æòıõô.Ù˘‚·JC"‚´G!#˚+î¿)°·|Ü?At´ëey…\Yh2G˝öå‹˛(Ó)3=„]êô0?Üe◊ß:W%±Î–ı›uÛ+™zñj∏¡+‚Zä$«xpìAÙ*{›èLo%Û◊nùœÚŸcRï◊\fU˙Z¨®±7é‰÷@jØ)W¢|cWz[†´£7ÀË˝.é¿áõ¬¬ö‰ÆE∑&ú„áˆ⁄„äèï∂!ñ∏c∫Iº¯>÷W~SÂBÛŒeÈÄj≈r<‰˛ô)ΩPD=#ñ¿aˆŒç?wä2¿AæTjº∞u∞ÇxHnv3Go≤Ús°L.·ƒŸ—ˇ‹Ga˙òì⁄‚ÂqÌh7u°õe|µóÛNF’\®fH9XπGµSmi[ëäEAÁ©àluì˜Öf®ç¶
+oíÉÎHlº{¿„DƒıÕ´ﬂ]Ãå~D|Tõø”?ºwÇ”1+$˘‹πªC"áÜªB«¬Ø^Ì¡È ê{⁄uûË¿ﬁ§Àúôù…ß–È,y†¸-§=|ëXÑìî/…K2ñÑ{Ph£z¡E"ÄøV$ì√≈ñ¬ÄÃêq8è? y|¿´œ⁄√&ÕeÁˇIñm~"óí/‹=?∑ÕÀ≠ßcópÏb)^“ë£À.óÕŸ≤Ö∑6q‡[XS'}–=Ú±‚¡ΩÅ¥Û˜Ìùnr=∞©<	|e)úÿ…ä”U\‡O8÷¬ó‰›…>©\{`º›;lzzãXøD´¶¿´ﬂÕÿ√-Ë≠ˇÀvﬂøØluı`gJÛ´UXEoíQãZU£g%–,jg˛K˙∆ç>¨é≥∑n6\Õı|b@W$ËOQ≈∏‚‹ò3@?ß/äVTMMMC(Éö{¶ΩÍÒ«S]ﬂ·¥Üq˘JÈΩâUBCpø’#£™©m!ÏW"˛hj<iD‘–ºÆ“ˆèë6 ‡°b„•–#opˆû…˘-¡÷£î)¸4CÚÕ–ƒ/Õ¿¨gSÆ,%%›Ã\¢¸|j»“π^:JAóyÊ?◊sˇ X6OSèÎ|µ~”/œ ïí˙ãØ’Ó≥e™,øc_oÉÔ˚y¬35”UÊÁ[±à:Æ2ıP[Œ˜◊[D«=®â÷®[,‰Ω‘Fß≈BÊÇßiµ»¨*$°ñ√ÎÜ«UœUcÆ’å*F:]í˜dfhƒ\¯t5ëÍ¢\oÌ9Çpsq≤ÿE‰e¶ì@ﬁŒJnÃa“#8æ“ë}+tD®æ“è†ÓQ·ª≥U˙à)Ü+[j¯ãÉÚ0ˆÛ’Q˝ËúÈ≥Â´»µ]q•€yøÿ˜ÚúÚﬁ’ØÙ[Å•^’# 9å0—›FUﬁ¯~]√ LıËî˘›+°^L)Íuwt¢<úøËÏßôÑ8J˛ 7…íOFπÎHSŒ0E—–˛ï]Æuà@˚hëUS*π3›ﬁcÓteØg]„="tíéFÏÃ„‡+N¡dÿÖtÙπ»g◊7À5®¨Õiª¢•Ï_ÖbP;U4whË0=çú⁄r—Ëæ`ñµí„]Ø≈⁄≥(Œ{2Âf’|áÏ⁄Ø©–eõ«õ
+Bõ‘Œ	òË˙HøÚÕPÿ9êéMió˜¥˚ËìRwS¢T⁄èõ—™)Òj]äxBOïÈ{h˘%LI2÷õº&¯—˜î'^r’Ú9µ÷f19Ÿr{˜‹# ∆ô°§≈jò	MﬂÓ·Z¨+ΩãÅÀ.J∏∏⁄È»¿≈>⁄D!Å›±¸Æ)Øãˇe˝Öt±∏ó√Dªô˛À¿Ü]dOÂâÿ◊øˇ4"ÛΩÚ„≈4wíX®A´Õ†¨-“ê2ÒåH§ˇb∫pº?âs˚ÅMå&açcIÀüÁ_€‹´XÍ¯˛V°P8ÜÈÂÕ«◊Ó¥˛Ç&uæ‡òÎ‹≠#∏=v†˚—÷ryØ’∑;4S’'Ô˚EÎ˚ïiÂf_ÚõïÈﬁ≥∏xuîNbÿá’`í:v∏kòØÄø˙’àmÍÍqˆÖ˛˚µµ…Âf®àÕØ—âÜ8‰≈πÏnèU"C'´]¨êŒ\uC*Û›˝†ê |—$U«ä5õ„6“y∏eMºkÆQƒú†-µ9◊qÖµ£ï"[uZÖ·~”´ºAüWlcÌiFﬁ]¡öëF)X/‹Ú€oì∫tŒ®9nÔg"g"n÷K≤ñsÃlÒ¯˜‘zNvn3’˚âqs∂∫ p·
+ ë‹≠7;;`v∞ì⁄ô<?∞≈E~>ÃíI∫ø›}$îÛêâñFF@XÂﬁµ:‚u:hü?“∆¢À$UÒ"§?∆ï≥ˇ\˘~U>©DSè"=´©„òtçÓ6Ë$ˇ˙c√—™ñ€0∏(o∫ d%y	mÒÔë[Hâò˜U…í≤:äã1ﬁÈÕ∫?7#ˇÔ7Ò#i‡ u·FØkKøU˝ÔNÈfÔ:“¬~≤ØqˇÃíÌ˚JÛÖh≈ˇâ*i]¸»ˇﬂ◊yÇJõb⁄EñØ?âoÚﬂ=ˆı#ó/µòÀ3¨Ïe?RËRáuO.kÌ’mÎ™3Nhji£¡?\f.ôßÿS.Ä3¯uiõ=mC_æA>ö"Üﬁ^m‰sªG∏Óü©ÔXù∑€	x˛·´`∏_|€⁄∆m+wëú%`ñ/qÆQr;§%b¸"sÓuôiªFZBT=¶eCòD{·¥˘†≥dŒk]‡∏◊K¥lg◊ﬁü€i‰%.öXÍ«ûY]h®˝ø∏Õúµ‚Ëp €8õpÎŸi&f◊}⁄:H„Åiôÿy“ïﬁíÊ¨:¢K‰eù~ïáøæå¯>ΩÂ]°£∑⁄¸8Ò˜èm∏ø¬—ZŸ5ÚwÀ}!r•//yG±’x%Gxç‘
+°äfS\È§"¢OÁæ∞†Òát3£‡K†–6”Y®—^≠`YsÂ,?ÁFŒÂlÀæ∫4yVú⁄óÖ&√¬£Ø÷ﬁEsqpÆK≠›ÿ /Úû{//#≈¡ıZ≥)íjùÂôÏ.™v^X‚˜bCÎºOUº¨=b"^7*VízSàl¥öq8π‘’n.±¨på∆˛<„∫‘Ö ˙mÙ[-äOı}Ï0]v#´4Òö≥Æ–ƒGì'¬m[óÃê√}2TwpÎØvıv8u"€Ñ)ãØËQÖΩfÈßâ¨¨Åp¢Êp ",˜„æ⁄¿¢O™ìˇ‰YY”¡ìsC5¡πR´ìñT˛}≤Vi≤∞xKøÖû∞é™+~3@?¡+:ØÛ85VÓ7zuõäô«qÊj∂ ⁄Õ˚Ω7ôGUñåuDwµÌ^Â´ÍÎ97«[&pŒú‘õQ6ÌvOHõ<q-X’óW˚´∏∏©Z«Âc≈|œå	˚lb]MèöÒJû~ƒøò©Îû∏5Lè.≠—^Ωu—Xﬁñ+	¡8GŸ;…Xˆ9O±„züTòW°ä°æ oºà‘d±08)T8‡éjG<~Œ∂WAäX£pö⁄†zG¬ä÷˜Ji—Ä¢UCÔƒ∫{•GR~bbTæ‚Ï.Ï4—≤S¸œI/ô≈ñËã!õ?‰≈5£ÇÒmÖî‡ïöMßõ`Â∫xŸ†´≈?Ùj/Ã3√y¬	eÏ6õ¨ˇÊäÊOí›⁄mÃ° "moƒ∞†Ó‹Â}DlÑ˝ˇ‰–0ƒçRÜ˚'ËBÜÙøÄ=.Ëk9ÎÍÒp!äe€¡mméx◊©Ã†Â‡^÷ÊQ¶˘_|pùÇ“cúù¨U–Ùã*k\Ææ
+„ÍÊÒÖ-◊H  ◊‡_ØY'’&›ÍÍ©ÒVL’T>˚ªiÅ≠◊Ÿ≥“_Ã˙Ã/Î=mö› |G˚>ô ‰¯2wRñ¡{ÜÇ»*—:vO‹fïΩîOe≈ãúÚŒl¸ü4›A“Í‡h◊ûh©Zénï¨Ôê∑1nÆŸ }Û)Q;O˛¸/oèÍF—ûê¿ÀÜœ8íXfLÒ⁄Ÿ©Fí»˜q[˚:%x˚çFÌà\∆Ã‘çÀÆ-F]åjZ¬g8JU,uÒﬁ]ˇÏ…@ÌC(¸ı åÁ~î∞>üÌw*•ø˜ªïª(ÒHJ©£p˛<<Ü<Ë”Ö·Øé€ˆÛ≤RÛüÿÌÇ’bı[~®òÔP˙ €ÎÔ«TlÆ®¢MˆåóêV¿™ÏëpøMR^≈∑t©k¥ÚÔ3eQá;*t2»uæ©2V3ªñ|xùº~zR‰Ò°∞UZat˘ZÅûûhÀ£˚ß≥©ÕÇÕêê>Ωp|ÒŸÌz¬ï-<ö°çÀ…ÌΩ
+_8Î puze˛7T
+”Ef1i“À3∑◊$£≠`¶≥Â∞ëõfê≤.ãàzÕ& ÌôÁ0Eœ(‹Æ5´Œ∫3;lÙ$|EÌúÊR$L#øÃ+«m[9^ˇæ\◊QBé|
+ÙJPªd!"øsﬁπr?	√ÂÅË∑bÁŒÖ_ö¢®‰víy⁄ﬂDyZËSˇ0Æ0œÂÇçÉπ˜ÒïÆ9ıCîŸ08¶CP°—ˇpî∏e¸K~à	¶(6Õ9°Ä•”∂7‚«êíäö*º‡°Ë‘–>2kQ§ùÿmYﬂL˜úø2˚X˙x£—|·Å–Ÿ3Ì%ËOüÜëìÕˆ‚±–®9å«úlÀ3çgÔ7±áoOıÇ†°l˘:õ<ó#πz˙œy!©ëdÄ4¥ƒ‘»*»]d1hÜò 3†KÛˇ⁄⁄Uﬂ]˘:IOÓuÁ!ãÕk‡|‡ºÅ2
+W≤Ÿ+~UÆ©èjvÇ'nõ£ ûÑéK√å~(í±ı(=◊jæc^/?Q—"√|G——9lFøÃ2©€¯?1!ˆÕ≈T∫Q∆ü¸òË≤«´$Ω…rLêıBëÄ’º±ÌÇI<]—ª„ïh©Qúˆ7Fˇ—•¸˝\ÖÔ<Á(zG%ÍFj˚—…úå¯Ã€UIë∂cÚZd?iEôÓ+?™Ä“ıæ”v%Æ≥LÙÇ˚Ç=¡:ﬁ∂ó?B[6ïB2◊ﬂ«ö‹≈≤${Ä?[Â‰˛0‹ÌC=eÍ÷öcQ€ÃdlrTü‰ﬂ[sC˚@ıÛr•‘én™´é∞√KOæ*ÀÚ¨~≤»áe˙QÖÚ\ÕÖ∂VX/hè®d’qxh„˘üﬂ%é,`lÍ'ZwEßOnñ°+àÅ€™˜†}?‘
+—+ÜÏ¨ sÜõﬂ~˘B∫Ëªç"}~ÌOÕ+Ø‡@|CªÄœ"0”P;“ÄÈûÃ±ÀO= ≤AÕè˙ËΩ$›KqÎÎ|T°F 
+ŒŒ_Ôm´]÷npﬁ+QQ q◊¶¨¥€ÈêÇHØÕÈú—›S∫VåÓHm Éà∏bÌ”=Wû=±˛@œnå‚
+È˙d "Å
+ãƒﬁ–1—ãÓ©4∑¡›xWÆtÕW€¸Áé./Ìßıq-QÊv∂rÍ5HKSπiêh<ØwÎ•¥C!EÀ!*≠˛∂w¬tÿIicSA»¿∆õ_JOe¥XsΩfH˜bµ4‚¬Aï+(0u Q∫’Vïº◊ã5Ç∆¥Dî1à
+º§§Á¬bŸ&!˛ø[MÆGˆ'H^◊Uë˝,£ó∂äé€œpΩ=UµrwzGÖäá˚I£Ù¸”Õ¢iù\wœ»ú2XUıÂV»(le1ªs_’Ìy“!\ò´•œék,ú·Vπë€°jmKÆÀÕß6Yf°µ¨Á∂ä+¯äG‹•ø˝Ç<ZÅ•ç∏GWsØÄJˆ∫OO»bu®¬P›»YY’”‡ó—ûõY\¿¶´ ¢N¸Ó8n´XYò∂cDc‰>Û¢UñlŸ Ò5.Õ‡¯ç)á±)@¥≥K©Çw¡Å† dıπñãêÿ∂¨Q¶ER◊Ö:ñôJ(¡ßdµN“]*&2ß»—¨X∑è%c˜[U=¥ã§Ôù7¡úÆôæÓÈ$óôjKˆ 70c
+jÍEé3‘Ï8	ÌÉ¢B(£∫ë€A› Cº◊2äLÓm]–¯ﬁ¢)æ=wÉr‚Úe*xgZŸ∏∑òdÿf†≠ûow{π∫Ó‰…h	˛•Èh®Éüe4—¬ûˆõ-ª©5≤5Ú$'1Ô™¬pª¶LTwó-æΩyÊ|ˆ≠ ∞^ôFïbXó,§˝ì¨tÙ}î‘,ÍªTÙò`x/∫ï–gçeÚÿ(V˛ÙA„öú≤Òˆº´ê] [t7¶à¿¥ú‹ã/wÊv’Óaó´¶ ™<π1∑K’w™¯≠·áCD‚ÄK≤*ÈCÙÒª›©,ì√<©ºW'kñœ=kpvÅ≥%aU¸áOV!+π∑8ﬂçúÇ€YÏ∑(ΩJﬂ7b˝\ù∆"iL∑ˆ´Ï¸“Q_…÷–›™Ø˛£\WÔ&{X†Òµàaê:‹›vû9≈ ;Çy(Ÿ@1`Aâ≥¶›ö$PèwÎV®Ô≥xcÊ,ˇs‘˜Œ¬´éhûªÏä#Xí-ÚyJ¯ç‘∫«Ï)™M|Ò†ÇûPG∆€~E„xX¡∞BTLâ˙ßXF∞Ï Dz!uÛ|ËˇûMŸ=[ñw;^t∑Ó∞œã!˚~NâÈY'äÆ'x:«E”H¯F§ûéπCy#†M…ü%úÇEÂI≥∂9l1`∑≈rÄ.€òFE˜ó52q>§ö7>∞ÑΩrâ2úXQ „YÕ°}ü¶I◊·˜©—œp®*®z≤>GØn‰^‰ÃkL,dâ–'ü˝∫J ëÏπ»Jı../Œ•ŒvmÇﬁ
+s(!æ8U≤À>É≤ã€k9°∏jÚS]¬<πÌGù◊úöwÇ
+`âÍè_Z)±r”;±;5ù
+ôâ%›≠Û„äÑπ‘¢ÀÖAf‡oÂ¢í‹çöñæL‹|/Y˘(±≥´Î_«"MK‡Ñ€`-·BTØyóêdÖ…ãã)Öhı #ù0$+#øR˙‹ÀèyÀﬂYN≈MIõdãÏk(3}®!≠\W∆õ«ã;î(Ä®å<Èc‘E°GT7váæWÕÜ&¢"ChtÿdQﬁwâÂØÌ‰¶0à”π=]éhUœÊféÆøÏøÆnÀ(òl≥‡&‡<bWR¯uKI´Ñ~K@ıf®oåx±GÊç"¯<äw»Î˙IÑ>+OÏÚX-[gÄ≥•€mÓ∂£“ó÷ﬂkI£µ/‰-1W√¨PÒ‹ —5yÃ™ß0Ù¯-/›E/‹î⁄_zÔ‚ıv8õêÛæÆ∫;L‰˜¶‚zªœê˙fôKn"/só~÷∂D
+Õp±v¿/ˇ'f?'?sìº>8aM˛cﬂ¶ØŸÀEÑ˝9¿:åUöqöÑäêK:€˚$+‰+K~ºfu∆O∫CÊélX€õ/]¥JÖ;˛mt∆∞ø˙}6µ~]ŒM¬≈/ŸúÏœ1èFÜó•ç•¯ëî>qµÖcdˇÔa/ªº˚ñ)íw–T%ìÀLUË.=≤o´/n˛ùü –w}®√ÚÎ ØùÊ!òüÎÇò3˛Ä+Ìù
+ci?´¨qåzÔê∫⁄™ñ_÷à‹∂≠(ﬂ‹∑ENËÿ¯iÃ÷⁄%Õò…’D0~ú≠]˘˘7 ˙·s-§¡ÁMpø∞˝Ñcpœ‰Üh9π≤ïôÄ_ò“›≠+~˙3Ä[¡[ŸPΩ}l%Ωû3*óRw¿9L´Ï◊dÍëÍàlât’f$ãﬁe´(.Öá¿Ò®+"~ùËŸ†GW,MóX∏üQe1ˇ‡”`Ωœ[]…¡°⁄ín1¿¶©gE˙ul˛‚∫-Àß˙≈cÚ»¬ ük+-B©yÈq0©”ë|¨{ÒÉ√ïÀ%‰pßIã#î,€ÅÎX∏º'∑Ë∂ÂVıÿó^"”pDt;Oπ‹ü|∂®O·∞Jê·,õºƒó1‹Ñ#†ë
+†z˜ÕªB*“a%îxı%tÅ›ïÏÆˆ ı‹‘Ø—˛ê:-O4ª	ó£, f££ÉFAgûób>UŸõ√C :4≤t/L;≤”ﬂj≠SÛhæbkä-9Ç«Øåç~o+‘/6til{àø¥æˆ “ÏmÉÆ›ËQf¬å=¿SsRR1Ù„|ot}Æ»[Õ4√‘XºTuiih∏x£ac"N—C,õƒTò1táyË∫»H&¨¬S≥M“˛Ã§Ÿ:¬\≥ ÌÕ∫µ—ØÌgTÃ>ÚﬂŸ±.› Ùç5!2∑T‹·ﬁˆ?Ì⁄ã´Úv•ˇÂ£ﬂ©U‰jÙπÃ∑6€\Ÿù≠Ú)bí·€ë¶Ú6‘
+µ[Ü«NÜ˙—ae≠Ωß	~9˚È¯˚NÀDo3jñ#ˇ©c∂áWrnå8/ΩÒ«#óÎ≤¨7|în =‡…ØØhŒlvüèµ∞ñµbL¿’ﬂ‘˛∫Uÿ’rÌ⁄ì@wÉÎq≠XEZ⁄¬û∫€DÌÖpÃGW≈ÕLz˙ß∑LΩ™9]ùvÊ(oÂ'üÜâD[t«µÊ∞r@˝‡ΩZ'_u™3Øt£õHìvxâµvÑî≈(&›…äJçµ÷ü-l3ŸA(º\˜ø¯ ^ôØ¸ˆx(˝Këßdã®´ÃC\ 2ûﬁ2“Ì¥Ö¬o1Ω∏4%KF°Ñ≠‹˘ùhv‡@sy˘ß¯≥ÉÀ…˚˙Bö,Ç≥¸KÉ∑&ÀS	t…–Kóc)0πfÒ+D¨Â3º8¬ıæt≈¶v3Aúé.¶òª7h≈à_Ïˆ€?Ä NèF: é@XéØÛÚØ^m≠3∏ vmË9ÌS‰ESÓfó≈¡è ÷*ôÌ}¥|éú§´KΩ—∂h;n˙Ò&1M°æS-Ê_'Œm_3ÿ ]çX‡å9ÁjA´ÖÈh˛Bå“6Ëæ#Ã[¨^ª(\ôCµ'p"ÊmŸ∏k\üÀg„≠Á—õÅVZ7ˇ:Eº>∞{‹R›∞Õ±|˛,=Å7îp?+„_!a”‚6µ‘Ñı*˚vTá%õlÌ™ıçÑ.òç∆sÊL_B"î˚∂˜Ÿ‘òÁg≈ùrJkC+p≤9∂≈îcñz(±ò∂ôœÅü¨k+ﬂ÷Iûi~›-®÷¥?5úÂ§azgö≤j›“Al`ZÛVK6çÂã∂∏;·√4Ì¥¿NBñŒ¿9UÊM”tUIl(tmm∞¯Ìsvmπ/€è’@vÜ˛$≠ﬁçmÏ]{F#}ÓäÖ]û∏Ì≠˘:E«“X¯Ü „ùhùÁ5KÊ2 ˝·Sm≤rM»üΩ*¢åŸƒ1ÃZu4æ ÏPr&å¢>∂&≠<=BGá”Õ⁄^aíZ‚+(∫LNùõı™≈ÓÈ*q‰Îó/˜±§Ï^5c≤‘Vü\Tü‘»@√·±Zk∂ô„ÙÖåî:ÄKîÈr∫¸*DÙdAS27»Ω,ÉS%±`oY€¢»WAˆê€Kµh?}8âÏª)e]\»|ËSdåıã˚ Yô%˜gø˜P?˚´G¯ñçAª¯1Ü`˘§n⁄ß¸z˚˝ceÜø˜n∞ïﬁΩ≠SG¶'s!Ω¶oâÑÃ_´"Zÿµaí’hØVû2˚∏A©AzÁ¶Ÿ‰H¸*∂O÷¢⁄`f[}Ùq!˚ wIÂµÂü?î≠Y@µŒÁUQ_srø∂+c~˙J#Ï\Ì5¥™πﬁ£@—Z-bÜPüX,d∂5>æP÷=ŸM¨ıñI)3°û¶ﬂd˜§xc;ó}˚¯3z7©¶VpÙõ±kj
+ì¶ z™ÿŒ?å˚}∞c=¢b@´¶jj‚({ruiˇ∫Ω}å®Í±ÕÅÜÉä»2'>;1
+Ä{”È£8Fªi∏bê:ZF¥F›F–;Q…Ç.®ñπRõî%35°–_åÎB±|œ;jâvñœLdñc=≈,?{›Aœ$§º.1~£êè„Ö¶ø®Ë0‹ÈÊ»Gÿ‰”@«I:˜á_∆\üüóµh«)b9bG‹ø‡kK@∫ Ï∫ªyæu\%{gÉæk6Sd˜ıE> 	Û™àÀ›œëÊœîòØÕXª≈+ômv*ÅÁöJoL6qN‹Ø˝¢◊©HÄÊa?πd’69hmèÛ@[±ø˛8„S⁄6~ƒ‰+YÊ∫…é[›ÁΩ4OË—^Øx–ë˚]C9∂Ü¶ÁƒrÔ˛ØŒÑ·`mÛÎ√ùcÓ∫Ndfi¿”òf∫µ&j]ˆßLä‹†=V:£÷OÆnäë¿Giã⁄pƒAsæxµ'çrßß%Ä[£–”‚Ï≈SÈØÒ‡ı{ E¿—wìEu©E∫!ÆÑ2A©£o«∆6+≈8h¢Å=Îù”†ôUÈ†}+pÎ*áoU5Œû¶âY≈∞Ìo˘ûbÓ ≥E®sÚ∂{_àW≥ÎπPxÏ‰ùt»ÇaÌÒÄÆ≠NÊÚIÊCsπ˛ U€È»»ÜŸ"Ë…ŸBkí/mÌç*ΩV¿>‡Àj∂=Õ¯óÄuÚ
+ÀØÙXMﬂÓ o‚‰,Mhl.Œ<¥Œà˙ Ê*√†
+Ô«
+°xπ™¡5‘È~Ã
+£g†;ü∂œÍE”ùíÛä_ÿ¨"Œwfºám˛Î4{„	(‹…˛∞*¨êGŒ™ÂÔ¥™Y@É€:›d˜>≤€›]à–´«ëT•ûvƒAHù›]À3EUºKÊ«´‰¸≈©ﬁòAl÷qÿLÂ|L¯h(ŸÉBè•µ` @…  æÍƒU∂ÒvÉÂíÕ%&äŒqº÷óídb›nBÕ›mOÏ{ı≤G˙aÛäªûHvzã[nVMâŸ{≈9  x¡©N¢ÎfÍ®9ÎπÂ∫‰<®cÆb«Íäí“∫lÖZ"`Ø≈’; ’˜·›ÀJDüˇTﬂÚ ]∑rSˆg°Ç1´TÉ7Œ∫KÑû˛„–´ùß˜™’‰ñDí·ºÎa›h¸ÖÓ6	ΩŸ…`]n«ﬁp¿~Hõπç‹!oX«’Œ¨≥¡'´±ºﬂe<î~&≥Væ´\Æ˜_ÓÆ <TÅ≥ºDG$îQŒâ≠{mé˘\wYŒ¬9Jû´È+fô9t+6ú+ø0Ø"‘RµA_åfõk[g”≥Æ”ÖP_rVí•˛¨ã‡"@÷‡™8©R’a›¿¥kYM{∆—¨y®◊m=£ïwe≈DÎôa]@f⁄W•gÃ’\Hµà:î(b\iñ÷√Wme0˜ÿe®€ÖE£»´%Ìü,_dÍe≈œÇUJjÊ≤ 1&c3ÁS°Î¶´ÄÎáæ5K0ˇYE\ÌÈrÆ›AÀ<∆≠»£	à˘∂qˆÊÚ|›è6µ!1xÀù¢Ñ 0•å2¬±Áˇ1ÏQ∆æl˛•'À(^€∞pJ˚®ˆª’É'Úmzﬁ·IÙÕÃNí)∂{xUS‰ ØáÀÌ∑‹
+¢ÄÄ≤ú√3 zÿàs’ƒp¯R'>7—Î‚˚u++Å,:zRÁLÚ∂úôúöQ:ˆºZ⁄}7≥.±‰∂ÎÛ“ìÒO±}Ô?»¥Æî+Ãˇåa-7P¯—¯[;9˝tóêQÈÎ?é¸é|Aì‡'¶hÊ¶Éñ(JBÎçõ?òõu-ÈNÃëŒ{6![±HÇ"W»1f(k/5Yt5»»…+Ø5‘»eìñqèπQî$ÂyÚO1∂ÙA∏¨uDâ4535Ãmÿïÿ#3e8A”AóÜ¶^/¯Î:)Æ2Ì≤÷\ÓvT[“êß1B¶¡æÓÜ
+©B mYÖãs∑™„È™0>•yÏS—n *ï¶lê¿4w√∑Î.d
+•4«„ÖÕ·hæjªèﬂ å}˘>/='n"ˇ|O	∫Í·ù4áï◊ö—
+ÀÎƒÂŸVuNÿGúb‰*fèÊ÷Vª%Sè_DÂO;‚QÇ°∫?*xvdxµVj‡›ΩåÂy'Éc!{ï“;€NNµŒ˚w8(£P6Ë? ^Í>π;èòHé∆c”	ã‡QÒh°®|äiéÏÑëıòµeTù\∫¥∏Ó‚∆4 ˛ˇ≠uHPT`ÖIÿ˝≠«ÍÄ+¢`5«9=8)Œzk0Nﬂ%‚6YC4ïˇõüÿ'«x±¯H‡ØËöÔxZø∂≤ßs©S6np∂–.ê{¸‘ïÔ˛Ù,≥ÏÒÏ˚Oƒ#ˇ$.ö;/Ñ4˝pàèçiùHŒ⁄Ü&¿s„Q¶/˚ìcÌPáÒUıæ•6∫G}7îã 1¢[BÌÏÀs≈€ŒP˚\Ä}¬' ™îë§Kíÿ”œ¶∆ŸŸ∆ÑÖ€ÎÒÜKs\=™/UùFëëîÌM∂ÀLi7Ct!ﬂ?hBäÍh∫,Œ~'±∑∂ØN¬Z•BÍ’%~ÆﬂÇ¿DÏJ˝û¬#,œ≥@áˇ˝´3ufúòéy¿Ã’W¸ $#ˆ‚“«ÒÚm–‹˝E<π5q>Yeˆ˘´
+5õ«‚BøXÚ9Ÿndıxß.Pç!ó≤Ÿ‹.ËrÄúA	˙(7WHúΩ—ERi>wi72)SÁZßdQq3‘3≠˙G‘Ykßn•_»Ÿ`ªY|sCÿ∆ÏÍäPC@.¸ïñü&|«s*TÅ —$à˜t˙wÎ±"◊}Ëﬁ˙Ö√ƒm#é	¥â]˚—DñÏ–πe⁄q’°∏ôÃPá›(|ÓK=›∑&Yi=â¶Z⁄;5¯z◊Ï{V{_†s1oÓq}‚øﬂÚr.>5yßKgŸ˛ﬁJ¡k˚£-®⁄bIç ¯∫KÍeÎ±y˜mr_¸©ˇU>ˇÚo˛pQÿ ‘¯è·ÿÏuöYwÃGXÑzœ~Ÿ´ÓF{B_ö¨VìtÓÕ∞!≠(ﬁí€ÊÂUÑ?∆.G;?çÇ˙ˆâ“5r"/[PPÉ´wÃ©"≤1îª†Q6ÿ◊ßå.Ú(<√5Kr$)m1π–hæ÷äæ—◊ﬁ/˛BﬁÈÓõ_çπ|‡ãı†„≈ëxwÈfx¥rˆszï“Àùˆ;ÇH!≤VÊV;¥˙Ë§ΩÜ≥'ÿÃ2ˆÂk>Zƒ˘OñÁ,ŸXseéïﬁVKﬂOrvΩ‰=~¸íA„¥ú!rQÖ†J≥¯∂∆V˘,ÜwØµñÓ7)‰m%l,•◊›Àπ#{£˜¶ãqçG~ﬁáﬂ†—ÒÒË}‰g¿	‡”H6Ëˆ‹k∏ﬂaÿ˛N;UGaú„f}’˝£'wÎ«>œU±ù^Â

@@ -1660,6 +1660,7 @@ Partial Public Class Form1
         '
         Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
         Me.ProgressPanel1.Appearance.Options.UseBackColor = True
+        Me.ProgressPanel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ProgressPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ProgressPanel1.Location = New System.Drawing.Point(0, 0)
         Me.ProgressPanel1.Name = "ProgressPanel1"
@@ -1758,9 +1759,11 @@ Partial Public Class Form1
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.ribbonStatusBar)
         Me.Controls.Add(Me.ribbonControl)
+        Me.IconOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.favicon_32x32
         Me.Name = "Form1"
         Me.Ribbon = Me.ribbonControl
         Me.StatusBar = Me.ribbonStatusBar
+        Me.Text = "GRÜN Data Recovery"
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemMarqueeProgressBar1, System.ComponentModel.ISupportInitialize).EndInit()

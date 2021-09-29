@@ -59,8 +59,9 @@ Partial Class Drive
         Me.Controls.Add(Me.CheckedListBoxControl1)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.SimpleButton1)
+        Me.IconOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.favicon_32x32
         Me.Name = "Drive"
-        Me.Text = "Choose Drive"
+        Me.Text = "Laufwerk Auswählen"
         CType(Me.CheckedListBoxControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

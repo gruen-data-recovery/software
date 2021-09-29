@@ -110,6 +110,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property favicon_32x32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("favicon-32x32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         '''&lt;root&gt;
         '''  &lt;!-- 
@@ -155,16 +165,6 @@ Namespace My.Resources
         Friend ReadOnly Property German_Designer() As String
             Get
                 Return ResourceManager.GetString("German_Designer", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property gruen_data_recovery_logo2021() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("gruen_data_recovery_logo2021", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         

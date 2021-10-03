@@ -524,7 +524,6 @@ D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\de
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\es\DevExpress.Xpo.v20.2.resources.dll
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\ja\DevExpress.Xpo.v20.2.resources.dll
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\ru\DevExpress.Xpo.v20.2.resources.dll
-D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbprojAssemblyReference.cache
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.Form1.resources
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.Resources.resources
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.English.resources
@@ -536,3 +535,4 @@ D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\Da
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.CopyComplete
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.exe
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.pdb
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.info.resources

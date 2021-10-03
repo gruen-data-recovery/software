@@ -300,4 +300,7 @@
   <data name="recover_same_drive" xml:space="preserve">
     <value>Du kannst nicht auf die Selbe Festplatte recovern!</value>
   </data>
+  <data name="info" xml:space="preserve">
+    <value>Info</value>
+  </data>
 </root>

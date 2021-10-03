@@ -281,6 +281,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Info ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property info() As String
+            Get
+                Return ResourceManager.GetString("info", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die Bezeichnung ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property label() As String

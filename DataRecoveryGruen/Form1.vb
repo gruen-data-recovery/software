@@ -661,6 +661,8 @@ redo:
         TextEdit1.Text = getValue("current_drive")
         BinOption.Text = getValue("bin")
         bbiBin.Caption = getValue("bin")
+        InfoOption.Text = getValue("info")
+        getInfo.Caption = getValue("info")
 
 
 
@@ -2120,6 +2122,12 @@ DoNext:
         Process.Start(webAddress)
     End Sub
 
+    Private Sub getInfo_ItemClick(sender As Object, e As ItemClickEventArgs) Handles getInfo.ItemClick
+
+        Dim info = New info
+        info.Show()
+
+    End Sub
 End Class
 
 

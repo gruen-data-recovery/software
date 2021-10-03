@@ -71,19 +71,22 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>444CA221BD3C319A0C2E00A4C286E1FF780D20E2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D2244D227AA8EC62CD179D1C2E342774A37AD70D</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>DataRecoveryGruen_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>DataRecoveryGruen_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>favicon-32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DataRecoveryGruen_1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v20.2" />
@@ -211,6 +214,12 @@
       <CustomToolNamespace>Drive</CustomToolNamespace>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="info.Designer.vb">
+      <DependentUpon>info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="info.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -235,9 +244,12 @@
     <EmbeddedResource Include="Drive.resx">
       <DependentUpon>Drive.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.vb</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="app.manifest" />
-    <None Include="DataRecoveryGruen_TemporaryKey.pfx" />
+    <None Include="DataRecoveryGruen_1_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -309,6 +321,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon-32x32.ico" />
+    <None Include="Resources\ic_info_outline_black_48dp.png" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\favicon-32x321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

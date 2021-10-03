@@ -284,6 +284,7 @@ Partial Public Class Form1
         Me.RepositoryItemButtonEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         Me.LaufwerkBox = New DevExpress.XtraBars.BarEditItem()
         Me.bbiBin = New DevExpress.XtraBars.BarButtonItem()
+        Me.getInfo = New DevExpress.XtraBars.BarButtonItem()
         Me.ribbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.hOptions = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.fbFormat = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -292,6 +293,7 @@ Partial Public Class Form1
         Me.hPP = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.HelpOption = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.BinOption = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.InfoOption = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.rpgLanguage = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage3 = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -326,6 +328,11 @@ Partial Public Class Form1
         Me.BarEditItem22 = New DevExpress.XtraBars.BarEditItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem5 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem6 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem7 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem8 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemMarqueeProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -400,9 +407,9 @@ Partial Public Class Form1
         '
         Me.ribbonControl.ExpandCollapseItem.Id = 0
         Me.ribbonControl.ImageAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.bbiPrintPreview, Me.bsiRecordsCount, Me.bbiScan, Me.bbiRecover, Me.bbiStop, Me.bbiRefresh, Me.BarLinkContainerItem1, Me.BarListItem1, Me.BarEditItem1, Me.BarEditItem2, Me.BarEditItem3, Me.BarEditItem4, Me.BarEditItem5, Me.BarEditItem6, Me.BarEditItem7, Me.CreateBarBaseItem1, Me.CreateLineBaseItem1, Me.CreatePieBaseItem1, Me.CreateRotatedBarBaseItem1, Me.CreateAreaBaseItem1, Me.CreateOtherSeriesTypesBaseItem1, Me.ChangePaletteGalleryBaseItem1, Me.ChangeAppearanceGalleryBaseItem1, Me.RunDesignerChartItem1, Me.SaveAsTemplateChartItem1, Me.LoadTemplateChartItem1, Me.PrintPreviewChartItem1, Me.PrintChartItem1, Me.CreateExportBaseItem1, Me.ExportToPDFChartItem1, Me.ExportToHTMLChartItem1, Me.ExportToMHTChartItem1, Me.ExportToXLSChartItem1, Me.ExportToXLSXChartItem1, Me.ExportToRTFChartItem1, Me.ExportToBMPChartItem1, Me.ExportToGIFChartItem1, Me.ExportToJPEGChartItem1, Me.ExportToPNGChartItem1, Me.ExportToTIFFChartItem1, Me.CreateExportToImageBaseItem1, Me.BarCheckItem1, Me.SkinPaletteRibbonGalleryBarItem1, Me.BarWorkspaceMenuItem1, Me.BarEditItem8, Me.BarCheckItem2, Me.fbPicture, Me.BarEditItem11, Me.fbText, Me.fbDocument, Me.BarToggleSwitchItem1, Me.fbProgram, Me.fbMusicVideo, Me.fbUnknown1, Me.fbExcellent, Me.fbGood, Me.fbOK, Me.fbBadHorrible, Me.fbOverwritten, Me.fbUnknown, Me.sysinfo1, Me.sysinfo2, Me.sysinfo3, Me.BarEditItem9, Me.BarEditItem12, Me.BarEditItem13, Me.sysinfo4, Me.sysinfo5, Me.sysinfo6, Me.sysinfo7, Me.sysinfo8, Me.sysinfo9, Me.cbLanguage, Me.btnlanguage, Me.BarEditItem14, Me.combobox, Me.BarEditItem15, Me.BarEditItem16, Me.BarEditItem17, Me.BarCheckItem3, Me.bbiReset, Me.BarEditItem18, Me.BarEditItem19, Me.BarEditItem20, Me.BarEditItem21, Me.sysinfo1a, Me.sysinfo2b, Me.sysinfo3b, Me.getHelp, Me.BarEditItem23, Me.LaufwerkBox, Me.bbiBin})
+        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.bbiPrintPreview, Me.bsiRecordsCount, Me.bbiScan, Me.bbiRecover, Me.bbiStop, Me.bbiRefresh, Me.BarLinkContainerItem1, Me.BarListItem1, Me.BarEditItem1, Me.BarEditItem2, Me.BarEditItem3, Me.BarEditItem4, Me.BarEditItem5, Me.BarEditItem6, Me.BarEditItem7, Me.CreateBarBaseItem1, Me.CreateLineBaseItem1, Me.CreatePieBaseItem1, Me.CreateRotatedBarBaseItem1, Me.CreateAreaBaseItem1, Me.CreateOtherSeriesTypesBaseItem1, Me.ChangePaletteGalleryBaseItem1, Me.ChangeAppearanceGalleryBaseItem1, Me.RunDesignerChartItem1, Me.SaveAsTemplateChartItem1, Me.LoadTemplateChartItem1, Me.PrintPreviewChartItem1, Me.PrintChartItem1, Me.CreateExportBaseItem1, Me.ExportToPDFChartItem1, Me.ExportToHTMLChartItem1, Me.ExportToMHTChartItem1, Me.ExportToXLSChartItem1, Me.ExportToXLSXChartItem1, Me.ExportToRTFChartItem1, Me.ExportToBMPChartItem1, Me.ExportToGIFChartItem1, Me.ExportToJPEGChartItem1, Me.ExportToPNGChartItem1, Me.ExportToTIFFChartItem1, Me.CreateExportToImageBaseItem1, Me.BarCheckItem1, Me.SkinPaletteRibbonGalleryBarItem1, Me.BarWorkspaceMenuItem1, Me.BarEditItem8, Me.BarCheckItem2, Me.fbPicture, Me.BarEditItem11, Me.fbText, Me.fbDocument, Me.BarToggleSwitchItem1, Me.fbProgram, Me.fbMusicVideo, Me.fbUnknown1, Me.fbExcellent, Me.fbGood, Me.fbOK, Me.fbBadHorrible, Me.fbOverwritten, Me.fbUnknown, Me.sysinfo1, Me.sysinfo2, Me.sysinfo3, Me.BarEditItem9, Me.BarEditItem12, Me.BarEditItem13, Me.sysinfo4, Me.sysinfo5, Me.sysinfo6, Me.sysinfo7, Me.sysinfo8, Me.sysinfo9, Me.cbLanguage, Me.btnlanguage, Me.BarEditItem14, Me.combobox, Me.BarEditItem15, Me.BarEditItem16, Me.BarEditItem17, Me.BarCheckItem3, Me.bbiReset, Me.BarEditItem18, Me.BarEditItem19, Me.BarEditItem20, Me.BarEditItem21, Me.sysinfo1a, Me.sysinfo2b, Me.sysinfo3b, Me.getHelp, Me.BarEditItem23, Me.LaufwerkBox, Me.bbiBin, Me.getInfo})
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonControl.MaxItemId = 111
+        Me.ribbonControl.MaxItemId = 112
         Me.ribbonControl.Name = "ribbonControl"
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1, Me.RibbonPage2, Me.RibbonPage3})
         Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemProgressBar1, Me.RepositoryItemMarqueeProgressBar1, Me.RepositoryItemMarqueeProgressBar2, Me.RepositoryItemRadioGroup1, Me.RepositoryItemTextEdit1, Me.RepositoryItemBreadCrumbEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckedComboBoxEdit1, Me.RepositoryItemCheckEdit2, Me.RepositoryItemCheckEdit3, Me.RepositoryItemCheckEdit4, Me.RepositoryItemCheckEdit5, Me.RepositoryItemCheckEdit6, Me.RepositoryItemCheckEdit7, Me.RepositoryItemCheckEdit8, Me.RepositoryItemCheckEdit9, Me.RepositoryItemCheckEdit10, Me.RepositoryItemCheckEdit11, Me.RepositoryItemCheckEdit12, Me.RepositoryItemCheckedComboBoxEdit2, Me.RepositoryItemCheckedComboBoxEdit3, Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemComboBox3, Me.RepositoryItemCheckedComboBoxEdit4, Me.RepositoryItemCheckedComboBoxEdit5, Me.RepositoryItemCheckEdit13, Me.RepositoryItemComboBox4, Me.RepositoryItemAlignment1, Me.RepositoryItemPopupGalleryEdit1, Me.RepositoryItemGridLookUpEdit1, Me.RepositoryItemSparklineEdit1, Me.RepositoryItemButtonEdit2, Me.RepositoryItemComboBox5})
@@ -1359,9 +1366,17 @@ Partial Public Class Form1
         Me.bbiBin.Name = "bbiBin"
         Me.bbiBin.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
         '
+        'getInfo
+        '
+        Me.getInfo.Caption = "BarButtonItem9"
+        Me.getInfo.Id = 111
+        Me.getInfo.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_info_outline_black_48dp
+        Me.getInfo.Name = "getInfo"
+        Me.getInfo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
         'ribbonPage1
         '
-        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.hOptions, Me.fbFormat, Me.RibbonPageGroup2, Me.hRecover, Me.hPP, Me.HelpOption, Me.BinOption})
+        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.hOptions, Me.fbFormat, Me.RibbonPageGroup2, Me.hRecover, Me.hPP, Me.HelpOption, Me.BinOption, Me.InfoOption})
         Me.ribbonPage1.MergeOrder = 0
         Me.ribbonPage1.Name = "ribbonPage1"
         Me.ribbonPage1.Text = "Home"
@@ -1420,6 +1435,12 @@ Partial Public Class Form1
         Me.BinOption.ItemLinks.Add(Me.bbiBin)
         Me.BinOption.Name = "BinOption"
         Me.BinOption.Text = "RibbonPageGroup3"
+        '
+        'InfoOption
+        '
+        Me.InfoOption.ItemLinks.Add(Me.getInfo)
+        Me.InfoOption.Name = "InfoOption"
+        Me.InfoOption.Text = "Info"
         '
         'RibbonPage2
         '
@@ -1751,6 +1772,46 @@ Partial Public Class Form1
         Me.BarButtonItem2.Name = "BarButtonItem2"
         Me.BarButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
         '
+        'BarButtonItem4
+        '
+        Me.BarButtonItem4.Caption = "Hilfe"
+        Me.BarButtonItem4.Id = 105
+        Me.BarButtonItem4.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_live_help_black_48dp
+        Me.BarButtonItem4.Name = "BarButtonItem4"
+        Me.BarButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'BarButtonItem5
+        '
+        Me.BarButtonItem5.Caption = "Hilfe"
+        Me.BarButtonItem5.Id = 105
+        Me.BarButtonItem5.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_live_help_black_48dp
+        Me.BarButtonItem5.Name = "BarButtonItem5"
+        Me.BarButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'BarButtonItem6
+        '
+        Me.BarButtonItem6.Caption = "Hilfe"
+        Me.BarButtonItem6.Id = 105
+        Me.BarButtonItem6.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_live_help_black_48dp
+        Me.BarButtonItem6.Name = "BarButtonItem6"
+        Me.BarButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'BarButtonItem7
+        '
+        Me.BarButtonItem7.Caption = "Hilfe"
+        Me.BarButtonItem7.Id = 105
+        Me.BarButtonItem7.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_live_help_black_48dp
+        Me.BarButtonItem7.Name = "BarButtonItem7"
+        Me.BarButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'BarButtonItem8
+        '
+        Me.BarButtonItem8.Caption = "Hilfe"
+        Me.BarButtonItem8.Id = 105
+        Me.BarButtonItem8.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_live_help_black_48dp
+        Me.BarButtonItem8.Name = "BarButtonItem8"
+        Me.BarButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2016,4 +2077,11 @@ Partial Public Class Form1
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents bbiBin As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents getInfo As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents InfoOption As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem8 As DevExpress.XtraBars.BarButtonItem
 End Class

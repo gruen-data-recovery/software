@@ -532,7 +532,7 @@ D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\Da
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.GenerateResource.cache
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.exe.licenses
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.CoreCompileInputs.cache
-D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.CopyComplete
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.exe
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.pdb
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.info.resources
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.CopyComplete

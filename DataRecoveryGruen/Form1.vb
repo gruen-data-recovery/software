@@ -1496,40 +1496,43 @@ PBplus:
 
             Dim series1 As New Series("Pie Series 1", ViewType.Pie)
 
+            If cPicture = 0 And cText = 0 And cDocument = 0 And cProgram = 0 And cMusic = 0 And cVideo = 0 Then
 
-            series1.Points.Add(New SeriesPoint(getValue("picture"), cPicture + 0.000001))
-            series1.Points.Add(New SeriesPoint(getValue("text"), cText + 0.000002))
-            series1.Points.Add(New SeriesPoint(getValue("document"), cDocument + 0.000003))
-            series1.Points.Add(New SeriesPoint(getValue("program"), cProgram + 0.000004))
-            series1.Points.Add(New SeriesPoint(getValue("music"), cMusic + 0.000005))
-            series1.Points.Add(New SeriesPoint(getValue("video"), cVideo + 0.000006))
+            Else
+                series1.Points.Add(New SeriesPoint(getValue("picture"), cPicture + 0.000001))
+                series1.Points.Add(New SeriesPoint(getValue("text"), cText + 0.000002))
+                series1.Points.Add(New SeriesPoint(getValue("document"), cDocument + 0.000003))
+                series1.Points.Add(New SeriesPoint(getValue("program"), cProgram + 0.000004))
+                series1.Points.Add(New SeriesPoint(getValue("music"), cMusic + 0.000005))
+                series1.Points.Add(New SeriesPoint(getValue("video"), cVideo + 0.000006))
+            End If
 
 
 
             series1.LegendTextPattern = "{A}: {VP:P0}"
-            series1.Label.TextPattern = "{A}: {VP:P0}"
+                series1.Label.TextPattern = "{A}: {VP:P0}"
 
-            series1.Label.ResolveOverlappingMode = ResolveOverlappingMode.Default
-
-
-
-
-            ChartControl2.Series.Add(series1)
-
-
-            series1.PointOptions.ValueNumericOptions.Format = NumericFormat.Percent
-            series1.PointOptions.ValueNumericOptions.Precision = 0
+                series1.Label.ResolveOverlappingMode = ResolveOverlappingMode.Default
 
 
 
-            Dim chartTitle1 As New ChartTitle()
-            chartTitle1.Text = getValue("file") & "-" & getValue("type")
-            ChartControl2.Titles.Add(chartTitle1)
-            ChartControl2.Legend.Visible = True
-            ChartControl2.SelectionMode = ElementSelectionMode.Single
-            ChartControl2.SeriesSelectionMode = SeriesSelectionMode.Point
 
-        End If
+                ChartControl2.Series.Add(series1)
+
+
+                series1.PointOptions.ValueNumericOptions.Format = NumericFormat.Percent
+                series1.PointOptions.ValueNumericOptions.Precision = 0
+
+
+
+                Dim chartTitle1 As New ChartTitle()
+                chartTitle1.Text = getValue("file") & "-" & getValue("type")
+                ChartControl2.Titles.Add(chartTitle1)
+                ChartControl2.Legend.Visible = True
+                ChartControl2.SelectionMode = ElementSelectionMode.Single
+                ChartControl2.SeriesSelectionMode = SeriesSelectionMode.Point
+
+            End If
 
 
     End Sub
@@ -1545,50 +1548,56 @@ PBplus:
 
 
         Dim series1 As New Series("50 - 100 KB", ViewType.Bar)
-        series1.Points.Add(New SeriesPoint(getValue("size"), cSize2))
+        series1.Points.Add(New SeriesPoint("50 - 100 KB", cSize2))
+        series1.Points.Add(New SeriesPoint("100 - 500 KB", cSize3))
+        series1.Points.Add(New SeriesPoint("500 - 1500KB", cSize4))
+        series1.Points.Add(New SeriesPoint("1,5 - 5 MB", cSize5))
+        series1.Points.Add(New SeriesPoint("5 - 500 MB", cSize6))
+        series1.Points.Add(New SeriesPoint("500 - 1000 MB", cSize7))
+        series1.Points.Add(New SeriesPoint(">1 GB", cSize8))
 
-        Dim series2 As New Series("100 - 500 KB", ViewType.Bar)
-        series2.Points.Add(New SeriesPoint(getValue("size"), cSize3))
+        ''Dim series2 As New Series("100 - 500 KB", ViewType.Bar)
+        ''series2.Points.Add(New SeriesPoint(getValue("size"), cSize3))
 
-        Dim series3 As New Series("500 - 1500KB", ViewType.Bar)
-        series3.Points.Add(New SeriesPoint(getValue("size"), cSize4))
+        ''Dim series3 As New Series("500 - 1500KB", ViewType.Bar)
+        ''series3.Points.Add(New SeriesPoint(getValue("size"), cSize4))
 
-        Dim series4 As New Series("1,5 - 5 MB", ViewType.Bar)
-        series4.Points.Add(New SeriesPoint(getValue("size"), cSize5))
+        ''Dim series4 As New Series("1,5 - 5 MB", ViewType.Bar)
+        ''series4.Points.Add(New SeriesPoint(getValue("size"), cSize5))
 
-        Dim series5 As New Series("5 - 500 MB", ViewType.Bar)
-        series5.Points.Add(New SeriesPoint(getValue("size"), cSize6))
+        ''Dim series5 As New Series("5 - 500 MB", ViewType.Bar)
+        ''series5.Points.Add(New SeriesPoint(getValue("size"), cSize6))
 
-        Dim series6 As New Series("500 - 1000 MB", ViewType.Bar)
-        series6.Points.Add(New SeriesPoint(getValue("size"), cSize7))
+        ''Dim series6 As New Series("500 - 1000 MB", ViewType.Bar)
+        ''series6.Points.Add(New SeriesPoint(getValue("size"), cSize7))
 
-        Dim series7 As New Series(">1 GB", ViewType.Bar)
-        series7.Points.Add(New SeriesPoint(getValue("size"), cSize8))
+        ''Dim series7 As New Series(">1 GB", ViewType.Bar)
+        ''series7.Points.Add(New SeriesPoint(getValue("size"), cSize8))
 
         series1.LegendTextPattern = "{VP:P0}"
+
         series1.Label.ResolveOverlappingMode = ResolveOverlappingMode.Default
 
 
 
         ' Add the series to the chart.
         ChartControl3.Series.Add(series1)
-        ChartControl3.Series.Add(series2)
-        ChartControl3.Series.Add(series3)
-        ChartControl3.Series.Add(series4)
-        ChartControl3.Series.Add(series5)
-        ChartControl3.Series.Add(series6)
-        ChartControl3.Series.Add(series7)
+        ''ChartControl3.Series.Add(series2)
+        ''ChartControl3.Series.Add(series3)
+        ''ChartControl3.Series.Add(series4)
+        ''ChartControl3.Series.Add(series5)
+        ''ChartControl3.Series.Add(series6)
+        ''ChartControl3.Series.Add(series7)
 
         ' Hide the legend (if necessary).
-        ChartControl3.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True
-
-
+        ChartControl3.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False
 
 
         ' Add a title to the chart (if necessary).
         Dim chartTitle1 As New ChartTitle()
         chartTitle1.Text = getValue("file") & "-" & getValue("size")
         ChartControl3.Titles.Add(chartTitle1)
+
 
 
 

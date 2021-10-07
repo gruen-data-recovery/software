@@ -10,3 +10,5 @@ GRÜN Data Recovery Freeware
 Copyright GRÜN Data Recovery GmbH
 
 www.data-recovery.de 
+
+Quelle FreeRecovery von dcorphan: https://freerecover.sourceforge.io/

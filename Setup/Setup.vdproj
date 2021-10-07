@@ -981,12 +981,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C29F094846C0494393D08511FA7A11BA"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_CB83B7F67FA77A5EE51E0B2B4D2069C0"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
         "MsmSig" = "8:_UNDEFINED"
@@ -1157,6 +1151,12 @@
         {
         "MsmKey" = "8:_E0DD08BC67D16C3BFB25D9D0BB1BE2AE"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E2201F54888F4DCFA3BCEFF4ECE92AC9"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1412,6 +1412,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2311,26 +2319,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C29F094846C0494393D08511FA7A11BA"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Projekte\\Data-Recovery\\favicon-32x32.ico"
-            "TargetName" = "8:favicon-32x32.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_FDC45D80165D4F78934196030596FE25"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CB83B7F67FA77A5EE51E0B2B4D2069C0"
             {
             "AssemblyRegister" = "3:1"
@@ -2548,6 +2536,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2201F54888F4DCFA3BCEFF4ECE92AC9"
+            {
+            "SourcePath" = "8:..\\favicon-32x32.ico"
+            "TargetName" = "8:favicon-32x32.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_FDC45D80165D4F78934196030596FE25"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EE4C854524A49F19838884985A12D7A5"
             {
             "AssemblyRegister" = "3:1"
@@ -2636,7 +2644,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GRÜN Data Recovery Freeware"
         "ProductCode" = "8:{53ED5610-6951-4984-A119-9AB8715A98FE}"
-        "PackageCode" = "8:{BC86F443-AD9F-4202-AA60-19C95B27FEC8}"
+        "PackageCode" = "8:{488B1DB1-C056-4463-8955-67177F53A09C}"
         "UpgradeCode" = "8:{D7C2CED6-78B2-4575-854C-853DE7E2B811}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -2767,7 +2775,7 @@
             "Target" = "8:_387BB78D78554B899E7A6968B0191C51"
             "Folder" = "8:_3B4EE458BD524CE09C9F179AAA213A12"
             "WorkingFolder" = "8:_FDC45D80165D4F78934196030596FE25"
-            "Icon" = "8:_C29F094846C0494393D08511FA7A11BA"
+            "Icon" = "8:_E2201F54888F4DCFA3BCEFF4ECE92AC9"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BE91D65642474B17922BA425869F8774"
@@ -2781,7 +2789,7 @@
             "Target" = "8:_387BB78D78554B899E7A6968B0191C51"
             "Folder" = "8:_47C801BC99934FA78F13EFD3D0012B09"
             "WorkingFolder" = "8:_FDC45D80165D4F78934196030596FE25"
-            "Icon" = "8:_C29F094846C0494393D08511FA7A11BA"
+            "Icon" = "8:_E2201F54888F4DCFA3BCEFF4ECE92AC9"
             "Feature" = "8:"
             }
         }

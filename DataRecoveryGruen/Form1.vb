@@ -594,16 +594,13 @@ redo:
 
         refreshLanguage()
 
-        For Each ctrl As Control In Me.Controls
-            HelpProvider1.SetShowHelp(ctrl, True)
-        Next
+        'For Each ctrl As Control In Me.Controls
+        '    HelpProvider1.SetShowHelp(ctrl, True)
+        'Next
 
 
 
-        ''IO.File.WriteAllBytes("c:\temp\manual.pdf", My.Resources.Manual_german)
-        ''HelpProvider1.HelpNamespace = "c:\temp\manual.pdf"
-        'DevExpress.Skins.SkinManager.Default.RegisterAssembly(GetType(DevExpress.UserSkins.GRUENMetropolis).Assembly)
-        'MessageBox.Show(DevExpress.Skins.SkinManager.DefaultSkinName)
+
 
     End Sub
 
@@ -2122,10 +2119,10 @@ DoNext:
 
 
             Dim drivetorecover As IO.DriveInfo = My.Computer.FileSystem.GetDriveInfo(currentDrive & "\")
-            webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?os=" + My.Computer.Info.OSPlatform + "&drive=" + drivetorecover.RootDirectory.ToString.Replace(":\", "") + "&size=" + drivetorecover.TotalSize.ToString + "&label=" + drivetorecover.VolumeLabel.ToString
+            webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform + "&drive=" + drivetorecover.RootDirectory.ToString.Replace(":\", "") + "&size=" + drivetorecover.TotalSize.ToString + "&label=" + drivetorecover.VolumeLabel.ToString
 
         Else
-            webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?os=" + My.Computer.Info.OSPlatform
+            webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform
         End If
 
         Process.Start(webAddress)

@@ -277,15 +277,5 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
-        '''<summary>
-        '''  Sucht eine lokalisierte Ressource vom Typ System.Byte[].
-        '''</summary>
-        Friend ReadOnly Property Manual_german() As Byte()
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Manual_german", resourceCulture)
-                Return CType(obj,Byte())
-            End Get
-        End Property
     End Module
 End Namespace

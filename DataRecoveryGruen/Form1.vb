@@ -5,14 +5,10 @@ Imports DevExpress.XtraBars
 Imports System.Runtime.InteropServices.Marshal
 Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraGrid.Columns
-Imports DevExpress.SpreadsheetSource.Implementation
 Imports System.Globalization
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraCharts
-Imports System.Text
-Imports DevExpress.XtraEditors.Repository
 Imports DevExpress.XtraEditors
-Imports System.Device.Location
 
 
 Public Class Form1

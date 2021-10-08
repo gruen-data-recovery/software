@@ -322,6 +322,9 @@
     <None Include="Resources\favicon-32x321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"D:\OneDrive\Projekte\Data-Recovery\Signierung\DataRecoveryGruen.bat"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

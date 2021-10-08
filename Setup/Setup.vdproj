@@ -214,6 +214,12 @@
         "Entry"
         {
         "MsmKey" = "8:_24EF671700CB0FC3FF512FA9373BCB0C"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_24EF671700CB0FC3FF512FA9373BCB0C"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -221,6 +227,12 @@
         {
         "MsmKey" = "8:_25D40D4B41DBFC20F1A8F479C4304C67"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_25D40D4B41DBFC20F1A8F479C4304C67"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -281,6 +293,12 @@
         {
         "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
         "OwnerKey" = "8:_7F316D5EF44A98D8C0BF588B0C30407F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -478,6 +496,12 @@
         "Entry"
         {
         "MsmKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -621,6 +645,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7F316D5EF44A98D8C0BF588B0C30407F"
         "OwnerKey" = "8:_B71ACB5964F468ECA0716B9BD7060B0D"
         "MsmSig" = "8:_UNDEFINED"
@@ -719,6 +749,12 @@
         {
         "MsmKey" = "8:_80B64FB72667495AF8A39E3F470348DE"
         "OwnerKey" = "8:_24EF671700CB0FC3FF512FA9373BCB0C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_80B64FB72667495AF8A39E3F470348DE"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -892,6 +928,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B71ACB5964F468ECA0716B9BD7060B0D"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B71ACB5964F468ECA0716B9BD7060B0D"
         "OwnerKey" = "8:_176C8FD3DFC7E537F834CC042925E75E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -987,6 +1029,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_CB83B7F67FA77A5EE51E0B2B4D2069C0"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CBFAD26C5E5AD0732B2D5C462C42E771"
         "OwnerKey" = "8:_161940268D5ECDF6D66D46EF7793C05C"
         "MsmSig" = "8:_UNDEFINED"
@@ -1043,6 +1091,12 @@
         {
         "MsmKey" = "8:_D089064DC52B0972D17690642298A4D7"
         "OwnerKey" = "8:_06C20E0AD84D436019C17AE15F112409"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D089064DC52B0972D17690642298A4D7"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1155,6 +1209,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E0DD08BC67D16C3BFB25D9D0BB1BE2AE"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E2201F54888F4DCFA3BCEFF4ECE92AC9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1168,6 +1228,12 @@
         "Entry"
         {
         "MsmKey" = "8:_EE4C854524A49F19838884985A12D7A5"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EE4C854524A49F19838884985A12D7A5"
         "OwnerKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1175,6 +1241,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_387BB78D78554B899E7A6968B0191C51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2009,6 +2081,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:DataRecoveryGruen, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed1e5f9db0bdf20a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_78F90C85DA254CC6BFCDC6CBDA0CC466"
+                    {
+                    "Name" = "8:DataRecoveryGruen.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\DataRecoveryGruen\\bin\\Release\\DataRecoveryGruen.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_FDC45D80165D4F78934196030596FE25"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7F316D5EF44A98D8C0BF588B0C30407F"
             {
             "AssemblyRegister" = "3:1"
@@ -2644,7 +2747,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GRÜN Data Recovery Freeware"
         "ProductCode" = "8:{53ED5610-6951-4984-A119-9AB8715A98FE}"
-        "PackageCode" = "8:{488B1DB1-C056-4463-8955-67177F53A09C}"
+        "PackageCode" = "8:{038573ED-C6AA-4AF3-B946-E38429E3FB32}"
         "UpgradeCode" = "8:{D7C2CED6-78B2-4575-854C-853DE7E2B811}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -2667,7 +2770,7 @@
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
-        "PostBuildEvent" = "8:"
+        "PostBuildEvent" = "8:\"D:\\OneDrive\\Projekte\\Data-Recovery\\Signierung\\Setup.bat\""
         "RunPostBuildEvent" = "3:0"
         }
         "Registry"

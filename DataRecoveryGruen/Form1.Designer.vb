@@ -285,6 +285,10 @@ Partial Public Class Form1
         Me.LaufwerkBox = New DevExpress.XtraBars.BarEditItem()
         Me.bbiBin = New DevExpress.XtraBars.BarButtonItem()
         Me.getInfo = New DevExpress.XtraBars.BarButtonItem()
+        Me.driveInfo = New DevExpress.XtraBars.BarButtonItem()
+        Me.driveInformation = New DevExpress.XtraBars.BarButtonItem()
+        Me.dataSwitch = New DevExpress.XtraBars.BarEditItem()
+        Me.RepositoryItemCheckEdit14 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.ribbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.hOptions = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.fbFormat = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -296,9 +300,11 @@ Partial Public Class Form1
         Me.InfoOption = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.rpgLanguage = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.Daten = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage3 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup6 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RepositoryItemCheckedComboBoxEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit()
         Me.RepositoryItemComboBox5 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
         Me.ribbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
@@ -376,6 +382,7 @@ Partial Public Class Form1
         CType(Me.RepositoryItemGridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemSparklineEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemButtonEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckedComboBoxEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemComboBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChartBarController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -407,12 +414,12 @@ Partial Public Class Form1
         '
         Me.ribbonControl.ExpandCollapseItem.Id = 0
         Me.ribbonControl.ImageAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.bbiPrintPreview, Me.bsiRecordsCount, Me.bbiScan, Me.bbiRecover, Me.bbiStop, Me.bbiRefresh, Me.BarLinkContainerItem1, Me.BarListItem1, Me.BarEditItem1, Me.BarEditItem2, Me.BarEditItem3, Me.BarEditItem4, Me.BarEditItem5, Me.BarEditItem6, Me.BarEditItem7, Me.CreateBarBaseItem1, Me.CreateLineBaseItem1, Me.CreatePieBaseItem1, Me.CreateRotatedBarBaseItem1, Me.CreateAreaBaseItem1, Me.CreateOtherSeriesTypesBaseItem1, Me.ChangePaletteGalleryBaseItem1, Me.ChangeAppearanceGalleryBaseItem1, Me.RunDesignerChartItem1, Me.SaveAsTemplateChartItem1, Me.LoadTemplateChartItem1, Me.PrintPreviewChartItem1, Me.PrintChartItem1, Me.CreateExportBaseItem1, Me.ExportToPDFChartItem1, Me.ExportToHTMLChartItem1, Me.ExportToMHTChartItem1, Me.ExportToXLSChartItem1, Me.ExportToXLSXChartItem1, Me.ExportToRTFChartItem1, Me.ExportToBMPChartItem1, Me.ExportToGIFChartItem1, Me.ExportToJPEGChartItem1, Me.ExportToPNGChartItem1, Me.ExportToTIFFChartItem1, Me.CreateExportToImageBaseItem1, Me.BarCheckItem1, Me.SkinPaletteRibbonGalleryBarItem1, Me.BarWorkspaceMenuItem1, Me.BarEditItem8, Me.BarCheckItem2, Me.fbPicture, Me.BarEditItem11, Me.fbText, Me.fbDocument, Me.BarToggleSwitchItem1, Me.fbProgram, Me.fbMusicVideo, Me.fbUnknown1, Me.fbExcellent, Me.fbGood, Me.fbOK, Me.fbBadHorrible, Me.fbOverwritten, Me.fbUnknown, Me.sysinfo1, Me.sysinfo2, Me.sysinfo3, Me.BarEditItem9, Me.BarEditItem12, Me.BarEditItem13, Me.sysinfo4, Me.sysinfo5, Me.sysinfo6, Me.sysinfo7, Me.sysinfo8, Me.sysinfo9, Me.cbLanguage, Me.btnlanguage, Me.BarEditItem14, Me.combobox, Me.BarEditItem15, Me.BarEditItem16, Me.BarEditItem17, Me.BarCheckItem3, Me.bbiReset, Me.BarEditItem18, Me.BarEditItem19, Me.BarEditItem20, Me.BarEditItem21, Me.sysinfo1a, Me.sysinfo2b, Me.sysinfo3b, Me.getHelp, Me.BarEditItem23, Me.LaufwerkBox, Me.bbiBin, Me.getInfo})
+        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.bbiPrintPreview, Me.bsiRecordsCount, Me.bbiScan, Me.bbiRecover, Me.bbiStop, Me.bbiRefresh, Me.BarLinkContainerItem1, Me.BarListItem1, Me.BarEditItem1, Me.BarEditItem2, Me.BarEditItem3, Me.BarEditItem4, Me.BarEditItem5, Me.BarEditItem6, Me.BarEditItem7, Me.CreateBarBaseItem1, Me.CreateLineBaseItem1, Me.CreatePieBaseItem1, Me.CreateRotatedBarBaseItem1, Me.CreateAreaBaseItem1, Me.CreateOtherSeriesTypesBaseItem1, Me.ChangePaletteGalleryBaseItem1, Me.ChangeAppearanceGalleryBaseItem1, Me.RunDesignerChartItem1, Me.SaveAsTemplateChartItem1, Me.LoadTemplateChartItem1, Me.PrintPreviewChartItem1, Me.PrintChartItem1, Me.CreateExportBaseItem1, Me.ExportToPDFChartItem1, Me.ExportToHTMLChartItem1, Me.ExportToMHTChartItem1, Me.ExportToXLSChartItem1, Me.ExportToXLSXChartItem1, Me.ExportToRTFChartItem1, Me.ExportToBMPChartItem1, Me.ExportToGIFChartItem1, Me.ExportToJPEGChartItem1, Me.ExportToPNGChartItem1, Me.ExportToTIFFChartItem1, Me.CreateExportToImageBaseItem1, Me.BarCheckItem1, Me.SkinPaletteRibbonGalleryBarItem1, Me.BarWorkspaceMenuItem1, Me.BarEditItem8, Me.BarCheckItem2, Me.fbPicture, Me.BarEditItem11, Me.fbText, Me.fbDocument, Me.BarToggleSwitchItem1, Me.fbProgram, Me.fbMusicVideo, Me.fbUnknown1, Me.fbExcellent, Me.fbGood, Me.fbOK, Me.fbBadHorrible, Me.fbOverwritten, Me.fbUnknown, Me.sysinfo1, Me.sysinfo2, Me.sysinfo3, Me.BarEditItem9, Me.BarEditItem12, Me.BarEditItem13, Me.sysinfo4, Me.sysinfo5, Me.sysinfo6, Me.sysinfo7, Me.sysinfo8, Me.sysinfo9, Me.cbLanguage, Me.btnlanguage, Me.BarEditItem14, Me.combobox, Me.BarEditItem15, Me.BarEditItem16, Me.BarEditItem17, Me.BarCheckItem3, Me.bbiReset, Me.BarEditItem18, Me.BarEditItem19, Me.BarEditItem20, Me.BarEditItem21, Me.sysinfo1a, Me.sysinfo2b, Me.sysinfo3b, Me.getHelp, Me.BarEditItem23, Me.LaufwerkBox, Me.bbiBin, Me.getInfo, Me.driveInfo, Me.driveInformation, Me.dataSwitch})
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonControl.MaxItemId = 112
+        Me.ribbonControl.MaxItemId = 118
         Me.ribbonControl.Name = "ribbonControl"
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1, Me.RibbonPage2, Me.RibbonPage3})
-        Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemProgressBar1, Me.RepositoryItemMarqueeProgressBar1, Me.RepositoryItemMarqueeProgressBar2, Me.RepositoryItemRadioGroup1, Me.RepositoryItemTextEdit1, Me.RepositoryItemBreadCrumbEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckedComboBoxEdit1, Me.RepositoryItemCheckEdit2, Me.RepositoryItemCheckEdit3, Me.RepositoryItemCheckEdit4, Me.RepositoryItemCheckEdit5, Me.RepositoryItemCheckEdit6, Me.RepositoryItemCheckEdit7, Me.RepositoryItemCheckEdit8, Me.RepositoryItemCheckEdit9, Me.RepositoryItemCheckEdit10, Me.RepositoryItemCheckEdit11, Me.RepositoryItemCheckEdit12, Me.RepositoryItemCheckedComboBoxEdit2, Me.RepositoryItemCheckedComboBoxEdit3, Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemComboBox3, Me.RepositoryItemCheckedComboBoxEdit4, Me.RepositoryItemCheckedComboBoxEdit5, Me.RepositoryItemCheckEdit13, Me.RepositoryItemComboBox4, Me.RepositoryItemAlignment1, Me.RepositoryItemPopupGalleryEdit1, Me.RepositoryItemGridLookUpEdit1, Me.RepositoryItemSparklineEdit1, Me.RepositoryItemButtonEdit2, Me.RepositoryItemComboBox5})
+        Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemProgressBar1, Me.RepositoryItemMarqueeProgressBar1, Me.RepositoryItemMarqueeProgressBar2, Me.RepositoryItemRadioGroup1, Me.RepositoryItemTextEdit1, Me.RepositoryItemBreadCrumbEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckedComboBoxEdit1, Me.RepositoryItemCheckEdit2, Me.RepositoryItemCheckEdit3, Me.RepositoryItemCheckEdit4, Me.RepositoryItemCheckEdit5, Me.RepositoryItemCheckEdit6, Me.RepositoryItemCheckEdit7, Me.RepositoryItemCheckEdit8, Me.RepositoryItemCheckEdit9, Me.RepositoryItemCheckEdit10, Me.RepositoryItemCheckEdit11, Me.RepositoryItemCheckEdit12, Me.RepositoryItemCheckedComboBoxEdit2, Me.RepositoryItemCheckedComboBoxEdit3, Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemComboBox3, Me.RepositoryItemCheckedComboBoxEdit4, Me.RepositoryItemCheckedComboBoxEdit5, Me.RepositoryItemCheckEdit13, Me.RepositoryItemComboBox4, Me.RepositoryItemAlignment1, Me.RepositoryItemPopupGalleryEdit1, Me.RepositoryItemGridLookUpEdit1, Me.RepositoryItemSparklineEdit1, Me.RepositoryItemButtonEdit2, Me.RepositoryItemComboBox5, Me.RepositoryItemCheckEdit14})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.ribbonControl.Size = New System.Drawing.Size(1332, 158)
@@ -1368,11 +1375,37 @@ Partial Public Class Form1
         '
         'getInfo
         '
-        Me.getInfo.Caption = "BarButtonItem9"
+        Me.getInfo.Caption = "Info"
         Me.getInfo.Id = 111
         Me.getInfo.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_info_outline_black_48dp
         Me.getInfo.Name = "getInfo"
         Me.getInfo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'driveInfo
+        '
+        Me.driveInfo.Caption = "BarButtonItem9"
+        Me.driveInfo.Id = 112
+        Me.driveInfo.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_info_outline_black_48dp
+        Me.driveInfo.Name = "driveInfo"
+        '
+        'driveInformation
+        '
+        Me.driveInformation.Caption = "Driveinfo"
+        Me.driveInformation.Id = 113
+        Me.driveInformation.ImageOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.ic_info_outline_black_48dp
+        Me.driveInformation.Name = "driveInformation"
+        '
+        'dataSwitch
+        '
+        Me.dataSwitch.Caption = "BarEditItem24"
+        Me.dataSwitch.Edit = Me.RepositoryItemCheckEdit14
+        Me.dataSwitch.Id = 117
+        Me.dataSwitch.Name = "dataSwitch"
+        '
+        'RepositoryItemCheckEdit14
+        '
+        Me.RepositoryItemCheckEdit14.AutoHeight = False
+        Me.RepositoryItemCheckEdit14.Name = "RepositoryItemCheckEdit14"
         '
         'ribbonPage1
         '
@@ -1444,7 +1477,7 @@ Partial Public Class Form1
         '
         'RibbonPage2
         '
-        Me.RibbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.rpgLanguage})
+        Me.RibbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.rpgLanguage, Me.Daten})
         Me.RibbonPage2.Name = "RibbonPage2"
         Me.RibbonPage2.Text = "Settings"
         '
@@ -1455,9 +1488,15 @@ Partial Public Class Form1
         Me.rpgLanguage.Name = "rpgLanguage"
         Me.rpgLanguage.Text = "Language"
         '
+        'Daten
+        '
+        Me.Daten.ItemLinks.Add(Me.dataSwitch)
+        Me.Daten.Name = "Daten"
+        Me.Daten.Text = "Daten"
+        '
         'RibbonPage3
         '
-        Me.RibbonPage3.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup6, Me.RibbonPageGroup1})
+        Me.RibbonPage3.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup6, Me.RibbonPageGroup1, Me.RibbonPageGroup3})
         Me.RibbonPage3.Name = "RibbonPage3"
         Me.RibbonPage3.Text = "SystemInfo"
         '
@@ -1479,6 +1518,12 @@ Partial Public Class Form1
         Me.RibbonPageGroup1.ItemLinks.Add(Me.sysinfo6)
         Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
         Me.RibbonPageGroup1.Text = "RibbonPageGroup1"
+        '
+        'RibbonPageGroup3
+        '
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.driveInformation)
+        Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
+        Me.RibbonPageGroup3.Text = "Info"
         '
         'RepositoryItemCheckedComboBoxEdit4
         '
@@ -1868,6 +1913,7 @@ Partial Public Class Form1
         CType(Me.RepositoryItemGridLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemSparklineEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemButtonEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckedComboBoxEdit4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemComboBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChartBarController1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2084,4 +2130,10 @@ Partial Public Class Form1
     Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem8 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents driveInfo As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents driveInformation As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents Daten As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents dataSwitch As DevExpress.XtraBars.BarEditItem
+    Friend WithEvents RepositoryItemCheckEdit14 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

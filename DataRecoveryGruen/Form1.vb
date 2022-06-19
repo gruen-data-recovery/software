@@ -586,6 +586,7 @@ redo:
         fbBadHorrible.CaptionAlignment = DevExpress.Utils.HorzAlignment.Far
         fbUnknown.CaptionAlignment = DevExpress.Utils.HorzAlignment.Far
         fbOverwritten.CaptionAlignment = DevExpress.Utils.HorzAlignment.Far
+        dataSwitch.EditValue = True
 
 
         refreshLanguage()
@@ -656,6 +657,10 @@ redo:
         bbiBin.Caption = getValue("bin")
         InfoOption.Text = getValue("info")
         getInfo.Caption = getValue("info")
+        driveInformation.Caption = getValue("driveInfo")
+        RibbonPageGroup3.Text = getValue("info")
+        Daten.Text = getValue("data")
+        dataSwitch.Caption = getValue("send_drive_information")
 
 
 
@@ -2109,19 +2114,16 @@ DoNext:
 
 
     Private Sub getHelp_ItemClick(sender As Object, e As ItemClickEventArgs) Handles getHelp.ItemClick
-        Dim webAddress As String
-
-        If currentDrive IsNot Nothing Then
-
-
-            Dim drivetorecover As IO.DriveInfo = My.Computer.FileSystem.GetDriveInfo(currentDrive & "\")
-            webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform + "&drive=" + drivetorecover.RootDirectory.ToString.Replace(":\", "") + "&size=" + drivetorecover.TotalSize.ToString + "&label=" + drivetorecover.VolumeLabel.ToString
-
-        Else
+        If dataSwitch.EditValue = False Then
+            Dim webAddress As String
             webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform
+            Process.Start(webAddress)
+        Else
+            Dim getHelp = New getHelp
+            getHelp.Show()
         End If
 
-        Process.Start(webAddress)
+
     End Sub
 
     Private Sub getInfo_ItemClick(sender As Object, e As ItemClickEventArgs) Handles getInfo.ItemClick
@@ -2130,6 +2132,16 @@ DoNext:
         info.Show()
 
     End Sub
+
+
+    Private Sub driveInformation_ItemClick(sender As Object, e As ItemClickEventArgs) Handles driveInformation.ItemClick
+
+        Dim driveInfo = New driveInfo
+        driveInfo.Show()
+
+    End Sub
+
+
 End Class
 
 

@@ -128,6 +128,7 @@
     <Reference Include="System.Core">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms.DataVisualization">
       <Private>True</Private>
     </Reference>
@@ -186,6 +187,12 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="getHelp.Designer.vb">
+      <DependentUpon>getHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="getHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -220,8 +227,17 @@
     <Compile Include="info.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="driveInfo.Designer.vb">
+      <DependentUpon>driveInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="driveInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getHelp.resx">
+      <DependentUpon>getHelp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -246,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="info.resx">
       <DependentUpon>info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driveInfo.resx">
+      <DependentUpon>driveInfo.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="app.manifest" />

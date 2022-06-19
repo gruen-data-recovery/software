@@ -119,6 +119,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Data ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property data() As String
+            Get
+                Return ResourceManager.GetString("data", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die Documents ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property document() As String
@@ -142,6 +151,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property drive_name() As String
             Get
                 Return ResourceManager.GetString("drive_name", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die drive information ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property driveInfo() As String
+            Get
+                Return ResourceManager.GetString("driveInfo", resourceCulture)
             End Get
         End Property
         
@@ -529,6 +547,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property select_filter() As String
             Get
                 Return ResourceManager.GetString("select_filter", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Send drive data with request ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property send_drive_information() As String
+            Get
+                Return ResourceManager.GetString("send_drive_information", resourceCulture)
             End Get
         End Property
         

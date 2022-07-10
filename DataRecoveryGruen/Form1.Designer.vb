@@ -416,13 +416,15 @@ Partial Public Class Form1
         Me.ribbonControl.ImageAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.bbiPrintPreview, Me.bsiRecordsCount, Me.bbiScan, Me.bbiRecover, Me.bbiStop, Me.bbiRefresh, Me.BarLinkContainerItem1, Me.BarListItem1, Me.BarEditItem1, Me.BarEditItem2, Me.BarEditItem3, Me.BarEditItem4, Me.BarEditItem5, Me.BarEditItem6, Me.BarEditItem7, Me.CreateBarBaseItem1, Me.CreateLineBaseItem1, Me.CreatePieBaseItem1, Me.CreateRotatedBarBaseItem1, Me.CreateAreaBaseItem1, Me.CreateOtherSeriesTypesBaseItem1, Me.ChangePaletteGalleryBaseItem1, Me.ChangeAppearanceGalleryBaseItem1, Me.RunDesignerChartItem1, Me.SaveAsTemplateChartItem1, Me.LoadTemplateChartItem1, Me.PrintPreviewChartItem1, Me.PrintChartItem1, Me.CreateExportBaseItem1, Me.ExportToPDFChartItem1, Me.ExportToHTMLChartItem1, Me.ExportToMHTChartItem1, Me.ExportToXLSChartItem1, Me.ExportToXLSXChartItem1, Me.ExportToRTFChartItem1, Me.ExportToBMPChartItem1, Me.ExportToGIFChartItem1, Me.ExportToJPEGChartItem1, Me.ExportToPNGChartItem1, Me.ExportToTIFFChartItem1, Me.CreateExportToImageBaseItem1, Me.BarCheckItem1, Me.SkinPaletteRibbonGalleryBarItem1, Me.BarWorkspaceMenuItem1, Me.BarEditItem8, Me.BarCheckItem2, Me.fbPicture, Me.BarEditItem11, Me.fbText, Me.fbDocument, Me.BarToggleSwitchItem1, Me.fbProgram, Me.fbMusicVideo, Me.fbUnknown1, Me.fbExcellent, Me.fbGood, Me.fbOK, Me.fbBadHorrible, Me.fbOverwritten, Me.fbUnknown, Me.sysinfo1, Me.sysinfo2, Me.sysinfo3, Me.BarEditItem9, Me.BarEditItem12, Me.BarEditItem13, Me.sysinfo4, Me.sysinfo5, Me.sysinfo6, Me.sysinfo7, Me.sysinfo8, Me.sysinfo9, Me.cbLanguage, Me.btnlanguage, Me.BarEditItem14, Me.combobox, Me.BarEditItem15, Me.BarEditItem16, Me.BarEditItem17, Me.BarCheckItem3, Me.bbiReset, Me.BarEditItem18, Me.BarEditItem19, Me.BarEditItem20, Me.BarEditItem21, Me.sysinfo1a, Me.sysinfo2b, Me.sysinfo3b, Me.getHelp, Me.BarEditItem23, Me.LaufwerkBox, Me.bbiBin, Me.getInfo, Me.driveInfo, Me.driveInformation, Me.dataSwitch})
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
+        Me.ribbonControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ribbonControl.MaxItemId = 118
         Me.ribbonControl.Name = "ribbonControl"
+        Me.ribbonControl.OptionsMenuMinWidth = 385
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1, Me.RibbonPage2, Me.RibbonPage3})
         Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemProgressBar1, Me.RepositoryItemMarqueeProgressBar1, Me.RepositoryItemMarqueeProgressBar2, Me.RepositoryItemRadioGroup1, Me.RepositoryItemTextEdit1, Me.RepositoryItemBreadCrumbEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckedComboBoxEdit1, Me.RepositoryItemCheckEdit2, Me.RepositoryItemCheckEdit3, Me.RepositoryItemCheckEdit4, Me.RepositoryItemCheckEdit5, Me.RepositoryItemCheckEdit6, Me.RepositoryItemCheckEdit7, Me.RepositoryItemCheckEdit8, Me.RepositoryItemCheckEdit9, Me.RepositoryItemCheckEdit10, Me.RepositoryItemCheckEdit11, Me.RepositoryItemCheckEdit12, Me.RepositoryItemCheckedComboBoxEdit2, Me.RepositoryItemCheckedComboBoxEdit3, Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemComboBox3, Me.RepositoryItemCheckedComboBoxEdit4, Me.RepositoryItemCheckedComboBoxEdit5, Me.RepositoryItemCheckEdit13, Me.RepositoryItemComboBox4, Me.RepositoryItemAlignment1, Me.RepositoryItemPopupGalleryEdit1, Me.RepositoryItemGridLookUpEdit1, Me.RepositoryItemSparklineEdit1, Me.RepositoryItemButtonEdit2, Me.RepositoryItemComboBox5, Me.RepositoryItemCheckEdit14})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(1332, 158)
+        Me.ribbonControl.Size = New System.Drawing.Size(1554, 193)
         Me.ribbonControl.StatusBar = Me.ribbonStatusBar
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
@@ -763,7 +765,7 @@ Partial Public Class Form1
         '
         '
         Me.ChangeAppearanceGalleryBaseItem1.Gallery.ColumnCount = 7
-        Me.ChangeAppearanceGalleryBaseItem1.Gallery.ImageSize = New System.Drawing.Size(80, 50)
+        Me.ChangeAppearanceGalleryBaseItem1.Gallery.ImageSize = New System.Drawing.Size(93, 62)
         Me.ChangeAppearanceGalleryBaseItem1.Gallery.RowCount = 4
         Me.ChangeAppearanceGalleryBaseItem1.Id = 36
         Me.ChangeAppearanceGalleryBaseItem1.Name = "ChangeAppearanceGalleryBaseItem1"
@@ -1540,10 +1542,11 @@ Partial Public Class Form1
         'ribbonStatusBar
         '
         Me.ribbonStatusBar.ItemLinks.Add(Me.bsiRecordsCount)
-        Me.ribbonStatusBar.Location = New System.Drawing.Point(0, 690)
+        Me.ribbonStatusBar.Location = New System.Drawing.Point(0, 849)
+        Me.ribbonStatusBar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ribbonStatusBar.Name = "ribbonStatusBar"
         Me.ribbonStatusBar.Ribbon = Me.ribbonControl
-        Me.ribbonStatusBar.Size = New System.Drawing.Size(1332, 24)
+        Me.ribbonStatusBar.Size = New System.Drawing.Size(1554, 30)
         '
         'ChartBarController1
         '
@@ -1581,11 +1584,12 @@ Partial Public Class Form1
         XyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
         Me.ChartControl3.Diagram = XyDiagram1
         Me.ChartControl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChartControl3.Location = New System.Drawing.Point(3, 327)
+        Me.ChartControl3.Location = New System.Drawing.Point(3, 402)
+        Me.ChartControl3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ChartControl3.Name = "ChartControl3"
         Series1.Name = "Reihe1"
         Me.ChartControl3.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series1}
-        Me.ChartControl3.Size = New System.Drawing.Size(387, 156)
+        Me.ChartControl3.Size = New System.Drawing.Size(454, 192)
         Me.ChartControl3.TabIndex = 6
         '
         'BarEditItem10
@@ -1599,9 +1603,10 @@ Partial Public Class Form1
         '
         Me.Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(3, 23)
+        Me.Panel2.Location = New System.Drawing.Point(3, 29)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(393, 486)
+        Me.Panel2.Size = New System.Drawing.Size(460, 598)
         Me.Panel2.TabIndex = 21
         '
         'TableLayoutPanel2
@@ -1613,49 +1618,55 @@ Partial Public Class Form1
         Me.TableLayoutPanel2.Controls.Add(Me.ChartControl2, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(393, 486)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(460, 598)
         Me.TableLayoutPanel2.TabIndex = 8
         '
         'ChartControl1
         '
         Me.ChartControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChartControl1.Location = New System.Drawing.Point(3, 3)
+        Me.ChartControl1.Location = New System.Drawing.Point(3, 4)
+        Me.ChartControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ChartControl1.Name = "ChartControl1"
         Series2.Name = "Reihe1"
         Series2.View = PieSeriesView1
         Me.ChartControl1.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series2}
-        Me.ChartControl1.Size = New System.Drawing.Size(387, 156)
+        Me.ChartControl1.Size = New System.Drawing.Size(454, 191)
         Me.ChartControl1.TabIndex = 7
         '
         'ChartControl2
         '
         Me.ChartControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChartControl2.Location = New System.Drawing.Point(3, 165)
+        Me.ChartControl2.Location = New System.Drawing.Point(3, 203)
+        Me.ChartControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ChartControl2.Name = "ChartControl2"
         Series3.Name = "Reihe1"
         Series3.View = PieSeriesView2
         Me.ChartControl2.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series3}
-        Me.ChartControl2.Size = New System.Drawing.Size(387, 156)
+        Me.ChartControl2.Size = New System.Drawing.Size(454, 191)
         Me.ChartControl2.TabIndex = 8
         '
         'GridControl
         '
         Me.GridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GridControl.Location = New System.Drawing.Point(0, 0)
         Me.GridControl.MainView = Me.GridView1
+        Me.GridControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GridControl.MenuManager = Me.ribbonControl
         Me.GridControl.Name = "GridControl"
-        Me.GridControl.Size = New System.Drawing.Size(927, 486)
+        Me.GridControl.Size = New System.Drawing.Size(1082, 598)
         Me.GridControl.TabIndex = 0
         Me.GridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
+        Me.GridView1.DetailHeight = 431
         Me.GridView1.GridControl = Me.GridControl
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -1664,9 +1675,10 @@ Partial Public Class Form1
         '
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(402, 23)
+        Me.Panel1.Location = New System.Drawing.Point(469, 29)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(927, 486)
+        Me.Panel1.Size = New System.Drawing.Size(1082, 598)
         Me.Panel1.TabIndex = 19
         '
         'Panel3
@@ -1675,8 +1687,9 @@ Partial Public Class Form1
         Me.Panel3.Controls.Add(Me.GridControl)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(927, 486)
+        Me.Panel3.Size = New System.Drawing.Size(1082, 598)
         Me.Panel3.TabIndex = 0
         '
         'PopupControlContainer1
@@ -1686,10 +1699,11 @@ Partial Public Class Form1
         Me.PopupControlContainer1.Controls.Add(Me.btnStop)
         Me.PopupControlContainer1.Controls.Add(Me.ProgressBarControl1)
         Me.PopupControlContainer1.Controls.Add(Me.ProgressPanel1)
-        Me.PopupControlContainer1.Location = New System.Drawing.Point(131, 108)
+        Me.PopupControlContainer1.Location = New System.Drawing.Point(153, 133)
+        Me.PopupControlContainer1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PopupControlContainer1.Name = "PopupControlContainer1"
         Me.PopupControlContainer1.Ribbon = Me.ribbonControl
-        Me.PopupControlContainer1.Size = New System.Drawing.Size(340, 105)
+        Me.PopupControlContainer1.Size = New System.Drawing.Size(397, 129)
         Me.PopupControlContainer1.TabIndex = 1
         Me.PopupControlContainer1.Visible = False
         '
@@ -1698,28 +1712,31 @@ Partial Public Class Form1
         Me.PictureBox1.ErrorImage = Nothing
         Me.PictureBox1.Image = Global.DataRecoveryGruen.My.Resources.Resources.loading
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1150, 73)
+        Me.PictureBox1.Location = New System.Drawing.Point(1342, 90)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(325, 399)
+        Me.PictureBox1.Size = New System.Drawing.Size(379, 491)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
         'btnStop
         '
-        Me.btnStop.Location = New System.Drawing.Point(3436, 362)
+        Me.btnStop.Location = New System.Drawing.Point(4009, 446)
+        Me.btnStop.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(1376, 406)
+        Me.btnStop.Size = New System.Drawing.Size(1605, 500)
         Me.btnStop.TabIndex = 2
         Me.btnStop.Text = "Button1"
         Me.btnStop.UseVisualStyleBackColor = True
         '
         'ProgressBarControl1
         '
-        Me.ProgressBarControl1.Location = New System.Drawing.Point(140, 1035)
+        Me.ProgressBarControl1.Location = New System.Drawing.Point(163, 1274)
+        Me.ProgressBarControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ProgressBarControl1.MenuManager = Me.ribbonControl
         Me.ProgressBarControl1.Name = "ProgressBarControl1"
-        Me.ProgressBarControl1.Size = New System.Drawing.Size(4670, 364)
+        Me.ProgressBarControl1.Size = New System.Drawing.Size(5448, 448)
         Me.ProgressBarControl1.TabIndex = 1
         '
         'ProgressPanel1
@@ -1729,8 +1746,9 @@ Partial Public Class Form1
         Me.ProgressPanel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ProgressPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ProgressPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.ProgressPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ProgressPanel1.Name = "ProgressPanel1"
-        Me.ProgressPanel1.Size = New System.Drawing.Size(340, 105)
+        Me.ProgressPanel1.Size = New System.Drawing.Size(397, 129)
         Me.ProgressPanel1.TabIndex = 0
         Me.ProgressPanel1.Text = "ProgressPanel1"
         '
@@ -1744,35 +1762,38 @@ Partial Public Class Form1
         Me.TableLayoutPanel1.Controls.Add(Me.ProgressBarControl2, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TextEdit1, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 158)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 193)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1332, 532)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1554, 656)
         Me.TableLayoutPanel1.TabIndex = 23
         '
         'ProgressBarControl2
         '
         Me.ProgressBarControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ProgressBarControl2.Location = New System.Drawing.Point(402, 515)
+        Me.ProgressBarControl2.Location = New System.Drawing.Point(469, 635)
+        Me.ProgressBarControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ProgressBarControl2.MenuManager = Me.ribbonControl
         Me.ProgressBarControl2.Name = "ProgressBarControl2"
-        Me.ProgressBarControl2.Size = New System.Drawing.Size(927, 14)
+        Me.ProgressBarControl2.Size = New System.Drawing.Size(1082, 17)
         Me.ProgressBarControl2.TabIndex = 22
         '
         'TextEdit1
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.TextEdit1.Location = New System.Drawing.Point(402, 3)
+        Me.TextEdit1.Location = New System.Drawing.Point(469, 4)
+        Me.TextEdit1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextEdit1.MenuManager = Me.ribbonControl
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.AdvancedModeOptions.AllowSelectionAnimation = DevExpress.Utils.DefaultBoolean.[False]
         Me.TextEdit1.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.Transparent
         Me.TextEdit1.Properties.ReadOnly = True
-        Me.TextEdit1.Size = New System.Drawing.Size(927, 20)
+        Me.TextEdit1.Size = New System.Drawing.Size(1082, 22)
         Me.TextEdit1.TabIndex = 23
         '
         'BarButtonItem1
@@ -1859,13 +1880,14 @@ Partial Public Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1332, 714)
+        Me.ClientSize = New System.Drawing.Size(1554, 879)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.ribbonStatusBar)
         Me.Controls.Add(Me.ribbonControl)
         Me.IconOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.favicon_32x32
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form1"
         Me.Ribbon = Me.ribbonControl
         Me.StatusBar = Me.ribbonStatusBar

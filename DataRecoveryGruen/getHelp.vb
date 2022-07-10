@@ -7,15 +7,25 @@ Imports System.Management.Instrumentation
 Public Class getHelp
 
 
-    Private Sub getHelp(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    Private Async Sub get_Help(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown
+
         Me.Visible = True
         ProgressPanel1.Visible = True
-        run()
+        Await getAsyncInfo()
+        Me.Close()
 
     End Sub
 
 
-    Function run()
+    Private Async Function getAsyncInfo() As Threading.Tasks.Task
+        Await Threading.Tasks.Task.Run(Sub()
+                                           run()
+
+                                       End Sub).ConfigureAwait(False)
+    End Function
+
+    Private Function run()
 
         Dim webAddress As String
         webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform
@@ -44,7 +54,14 @@ Public Class getHelp
                     laufwerke = "none"
                 End If
 
-                Dim bytes As Double = Double.Parse(queryObj("BytesPerSector")) * Double.Parse(queryObj("TotalSectors"))
+                Dim bps As Double = 0
+                Dim ts As Double = 0
+                Dim bytes As Double = 0
+
+
+                If (Double.TryParse(queryObj("BytesPerSector"), bps) And Double.TryParse(queryObj("TotalSectors"), ts)) Then
+                    bytes = bps * ts
+                End If
                 Dim gb As Double = Math.Round(bytes / (1024 * 1024 * 1024), 2)
 
                 Dim Temperature As Double = -1
@@ -92,7 +109,7 @@ Public Class getHelp
 
 
         Process.Start(webAddress)
-        Me.Close()
+
 
     End Function
 
@@ -129,10 +146,30 @@ Public Class getHelp
         Dim iDriveIndex As Integer = 0
         For Each drive As ManagementObject In wdSearcher.Get()
             Dim hdd = New HDD()
-            hdd.Model = drive("Model").ToString().Trim()
-            hdd.Type = drive("InterfaceType").ToString().Trim()
-            hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
-            hdd.Name = drive("Name").ToString().Trim()
+            Try
+                hdd.Model = drive("Model").ToString().Trim()
+            Catch ex As Exception
+                hdd.Model = "unknown"
+            End Try
+            Try
+                If (drive("InterfaceType") = Nothing) Then
+                    hdd.Type = "unknown"
+                Else
+                    hdd.Type = drive("InterfaceType").ToString().Trim()
+                End If
+            Catch ex As Exception
+                hdd.Type = "unknown"
+            End Try
+            Try
+                hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
+            Catch ex As Exception
+                hdd.InstanceName = "unknown"
+            End Try
+            Try
+                hdd.Name = drive("Name").ToString().Trim()
+            Catch ex As Exception
+                hdd.Name = "unknown"
+            End Try
             dicDrives.Add(iDriveIndex, hdd)
             iDriveIndex += 1
         Next drive

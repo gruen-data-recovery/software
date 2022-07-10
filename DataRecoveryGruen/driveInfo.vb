@@ -11,12 +11,22 @@ Public Class driveInfo
     End Sub
 
 
-    Private Sub driveInfo(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Async Sub driveInfo(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown
         Me.Visible = True
         ProgressPanel1.Visible = True
-        run()
+        Await getAsyncInfo()
+        GridControl1.DataSource = dataSourceGUI
+        ProgressPanel1.Visible = False
 
     End Sub
+
+
+    Private Async Function getAsyncInfo() As Threading.Tasks.Task
+        Await Threading.Tasks.Task.Run(Sub()
+                                           run()
+
+                                       End Sub).ConfigureAwait(False)
+    End Function
 
     Dim dataSourceGUI As BindingList(Of driveModel)
 
@@ -29,7 +39,6 @@ Public Class driveInfo
         dicDrives = getAdvancedInformation()
 
 
-        GridControl1.DataSource = dataSourceGUI
         Try
             Dim searcher As New ManagementObjectSearcher("root\CIMV2", "SELECT * FROM Win32_DiskDrive")
 
@@ -89,7 +98,7 @@ Public Class driveInfo
             Console.WriteLine("An error occurred while querying for WMI data: " & err.Message)
         End Try
 
-        ProgressPanel1.Visible = False
+
         'https://social.msdn.microsoft.com/Forums/vstudio/en-US/b3577b7a-ea4b-4c90-a3e9-31a9b621469b/accessing-hard-drive-smart-data-from-vb?forum=vbgeneral
 
     End Function
@@ -125,10 +134,33 @@ Public Class driveInfo
         Dim iDriveIndex As Integer = 0
         For Each drive As ManagementObject In wdSearcher.Get()
             Dim hdd = New HDD()
-            hdd.Model = drive("Model").ToString().Trim()
-            hdd.Type = drive("InterfaceType").ToString().Trim()
-            hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
-            hdd.Name = drive("Name").ToString().Trim()
+            Try
+                hdd.Model = drive("Model").ToString().Trim()
+            Catch ex As Exception
+                hdd.Model = "unknown"
+            End Try
+            Try
+
+                If (drive("InterfaceType") = Nothing) Then
+                    hdd.Type = "unknown"
+                Else
+                    hdd.Type = drive("InterfaceType").ToString().Trim()
+                End If
+            Catch ex As Exception
+                hdd.Type = "unknown"
+            End Try
+            Try
+                hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
+            Catch ex As Exception
+                hdd.InstanceName = "unknown"
+            End Try
+            Try
+                hdd.Name = drive("Name").ToString().Trim()
+            Catch ex As Exception
+                hdd.Name = "unknown"
+            End Try
+
+
             dicDrives.Add(iDriveIndex, hdd)
             iDriveIndex += 1
         Next drive

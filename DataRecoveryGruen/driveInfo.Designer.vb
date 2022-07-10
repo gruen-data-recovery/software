@@ -29,15 +29,18 @@ Partial Class driveInfo
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
+        Me.GridControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1023, 527)
+        Me.GridControl1.Size = New System.Drawing.Size(1193, 649)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
+        Me.GridView1.DetailHeight = 431
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -50,19 +53,21 @@ Partial Class driveInfo
         Me.ProgressPanel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ProgressPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ProgressPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.ProgressPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ProgressPanel1.Name = "ProgressPanel1"
-        Me.ProgressPanel1.Size = New System.Drawing.Size(1023, 527)
+        Me.ProgressPanel1.Size = New System.Drawing.Size(1193, 649)
         Me.ProgressPanel1.TabIndex = 1
         Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'driveInfo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1023, 527)
+        Me.ClientSize = New System.Drawing.Size(1193, 649)
         Me.Controls.Add(Me.ProgressPanel1)
         Me.Controls.Add(Me.GridControl1)
         Me.IconOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.favicon_32x32
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "driveInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Laufwerk Informationen"

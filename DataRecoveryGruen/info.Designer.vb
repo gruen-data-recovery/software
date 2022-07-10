@@ -35,56 +35,62 @@ Partial Class info
         'PictureEdit1
         '
         Me.PictureEdit1.EditValue = Global.DataRecoveryGruen.My.Resources.Resources.logo
-        Me.PictureEdit1.Location = New System.Drawing.Point(12, 52)
+        Me.PictureEdit1.Location = New System.Drawing.Point(14, 64)
+        Me.PictureEdit1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureEdit1.Name = "PictureEdit1"
         Me.PictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.[Auto]
         Me.PictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom
-        Me.PictureEdit1.Size = New System.Drawing.Size(137, 140)
+        Me.PictureEdit1.Size = New System.Drawing.Size(160, 172)
         Me.PictureEdit1.TabIndex = 0
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(12, 22)
+        Me.LabelControl1.Location = New System.Drawing.Point(14, 27)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(245, 13)
+        Me.LabelControl1.Size = New System.Drawing.Size(286, 16)
         Me.LabelControl1.TabIndex = 1
         Me.LabelControl1.Text = "GRÜN Data Recovery - Wir retten Daten seit 1991."
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(12, 198)
+        Me.LabelControl2.Location = New System.Drawing.Point(14, 244)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(152, 13)
+        Me.LabelControl2.Size = New System.Drawing.Size(177, 16)
         Me.LabelControl2.TabIndex = 2
         Me.LabelControl2.Text = "GRÜN Data Recovery Freeware"
         '
         'version
         '
-        Me.version.Location = New System.Drawing.Point(12, 217)
+        Me.version.Location = New System.Drawing.Point(14, 267)
+        Me.version.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.version.Name = "version"
-        Me.version.Size = New System.Drawing.Size(62, 13)
+        Me.version.Size = New System.Drawing.Size(71, 16)
         Me.version.TabIndex = 3
         Me.version.Text = "Version ......"
         '
         'LabelControl3
         '
-        Me.LabelControl3.Location = New System.Drawing.Point(12, 248)
+        Me.LabelControl3.Location = New System.Drawing.Point(14, 305)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl3.Name = "LabelControl3"
-        Me.LabelControl3.Size = New System.Drawing.Size(184, 13)
+        Me.LabelControl3.Size = New System.Drawing.Size(214, 16)
         Me.LabelControl3.TabIndex = 4
         Me.LabelControl3.Text = "Copyright GRÜN Data Recovery GmbH"
         '
         'LabelControl4
         '
-        Me.LabelControl4.Location = New System.Drawing.Point(12, 267)
+        Me.LabelControl4.Location = New System.Drawing.Point(14, 329)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl4.Name = "LabelControl4"
-        Me.LabelControl4.Size = New System.Drawing.Size(113, 13)
+        Me.LabelControl4.Size = New System.Drawing.Size(131, 16)
         Me.LabelControl4.TabIndex = 5
         Me.LabelControl4.Text = "www.data-recovery.de"
         '
         'info
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         SnapOptions1.SnapOnMoving = DevExpress.Utils.DefaultBoolean.[False]
         SnapOptions1.SnapOnResizing = DevExpress.Utils.DefaultBoolean.[False]
@@ -92,7 +98,7 @@ Partial Class info
         SnapOptions1.SnapToScreen = DevExpress.Utils.DefaultBoolean.[False]
         SnapOptions1.SnapToSnapForms = DevExpress.Utils.DefaultBoolean.[False]
         Me.BehaviorManager1.SetBehaviors(Me, New DevExpress.Utils.Behaviors.Behavior() {CType(DevExpress.Utils.Behaviors.Common.SnapWindowBehavior.Create(GetType(DevExpress.Utils.BehaviorSource.SnapWindowBehaviorSourceForForm), SnapOptions1), DevExpress.Utils.Behaviors.Behavior)})
-        Me.ClientSize = New System.Drawing.Size(335, 309)
+        Me.ClientSize = New System.Drawing.Size(391, 380)
         Me.Controls.Add(Me.LabelControl4)
         Me.Controls.Add(Me.LabelControl3)
         Me.Controls.Add(Me.version)
@@ -100,6 +106,7 @@ Partial Class info
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.PictureEdit1)
         Me.IconOptions.Image = Global.DataRecoveryGruen.My.Resources.Resources.favicon_32x32
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "info"
         Me.Text = "GRÜN Data Recovery Info"
         CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()

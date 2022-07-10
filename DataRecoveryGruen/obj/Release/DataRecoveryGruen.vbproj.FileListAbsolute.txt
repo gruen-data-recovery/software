@@ -718,4 +718,10 @@ D:\OneDrive\Projekte\DataRecovery\software-backup\DataRecoveryGruen\obj\Release\
 D:\OneDrive\Projekte\DataRecovery\software-backup\DataRecoveryGruen\obj\Release\DataRecoveryGruen.getHelp.resources
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.getHelp.resources
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.driveInfo.resources
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.TreeMap.v20.2.Core.dll
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.XtraTreeMap.v20.2.dll
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.XtraTreeMap.v20.2.UI.dll
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.TreeMap.v20.2.Core.xml
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.XtraTreeMap.v20.2.xml
+D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\bin\Release\DevExpress.XtraTreeMap.v20.2.UI.xml
 D:\OneDrive\GitHub\gruen-data-recovery\software\DataRecoveryGruen\obj\Release\DataRecoveryGruen.vbproj.CopyComplete

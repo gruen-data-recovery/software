@@ -56,8 +56,16 @@ Public Class driveInfo
                     laufwerke = "none"
                 End If
 
-                Dim bytes As Double = Double.Parse(queryObj("BytesPerSector")) * Double.Parse(queryObj("TotalSectors"))
-                Dim gb As Double = Math.Round(bytes / (1024 * 1024 * 1024), 2)
+                Dim bps As Double = 0
+                Dim ts As Double = 0
+                Dim bytes As Double = 0
+                Dim gb As Double = 0
+
+                If Double.TryParse(queryObj("BytesPerSector"), bps) And Double.TryParse(queryObj("TotalSectors"), ts) Then
+                    bytes = bps * ts
+                    gb = Math.Round(bytes / (1024 * 1024 * 1024), 2)
+                End If
+
 
                 Dim Temperature As Double = -1
                 Dim PowerOnHours As Double = -1
@@ -87,7 +95,9 @@ Public Class driveInfo
 
                 Next
 
-
+                If Temperature > 500 Then
+                    Temperature = -1
+                End If
 
 
                 result.Add(New driveModel() With {.Model = queryObj("Model"), .SerialNumber = queryObj("SerialNumber"), .Partitions = Int32.Parse(queryObj("Partitions")), .DeviceID = queryObj("DeviceID"), .FirmewareVersion = queryObj("FirmwareRevision"), .Laufwerke = laufwerke, .TotalSectors = queryObj("TotalSectors"), .BytesPerSector = queryObj("BytesPerSector"), .TotalBytes = bytes, .TotalGB = gb, .InterfaceType = queryObj("InterfaceType"), .Temperature = Temperature, .PowerOnCount = PowerOnCount, .PowerOnHours = PowerOnHours})
@@ -192,19 +202,29 @@ Public Class driveInfo
         ' check if SMART reports the drive is failing
         searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictStatus")
         iDriveIndex = 0
-        For Each drive As ManagementObject In searcher.Get()
 
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(drive.Properties("InstanceName").Value))) Then
-                    dicDrives(kvp.Key).IsOK = DirectCast(drive.Properties("PredictFailure").Value, Boolean) = False
-                End If
-            Next
+        Try
+
+            For Each drive As ManagementObject In searcher.Get()
+
+                Try
+
+                    For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
+                        If (dicDrives(kvp.Key).InstanceName.Equals(UCase(drive.Properties("InstanceName").Value))) Then
+                            dicDrives(kvp.Key).IsOK = DirectCast(drive.Properties("PredictFailure").Value, Boolean) = False
+                        End If
+                    Next
+                Catch ex As Exception
+
+                End Try
 
 
+                iDriveIndex += 1
+            Next drive
 
+        Catch ex As Exception
 
-            iDriveIndex += 1
-        Next drive
+        End Try
 
         ' retrive attribute flags, value worste and vendor data information
         searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictData")

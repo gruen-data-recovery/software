@@ -316,6 +316,12 @@
         "Entry"
         {
         "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
         "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -323,18 +329,6 @@
         {
         "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
         "OwnerKey" = "8:_80DAD06F24E19E1836120CD81AA1F607"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
-        "OwnerKey" = "8:_47CD3BB62E9BDE9473D6A69F76784486"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
-        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -425,6 +419,12 @@
         {
         "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
         "OwnerKey" = "8:_06C20E0AD84D436019C17AE15F112409"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_39C5F5FE93073EC217AF2FB7E866BC8B"
+        "OwnerKey" = "8:_47CD3BB62E9BDE9473D6A69F76784486"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -550,13 +550,13 @@
         "Entry"
         {
         "MsmKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
-        "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
-        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1006,13 +1006,13 @@
         "Entry"
         {
         "MsmKey" = "8:_B71ACB5964F468ECA0716B9BD7060B0D"
-        "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B71ACB5964F468ECA0716B9BD7060B0D"
-        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1342,6 +1342,12 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2CDB1EAFD425C925E4C42FEB8BD831B1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1349,18 +1355,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_80DAD06F24E19E1836120CD81AA1F607"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_47CD3BB62E9BDE9473D6A69F76784486"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_78F90C85DA254CC6BFCDC6CBDA0CC466"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1451,6 +1445,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_522A6F723F327CB87CDF06AD2EA8D64A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_47CD3BB62E9BDE9473D6A69F76784486"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2953,15 +2953,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GRÜN Data Recovery Freeware"
-        "ProductCode" = "8:{40D20678-0D07-4486-BAD1-114B634BB163}"
-        "PackageCode" = "8:{DD260442-56F4-4FE5-991A-26A85262A664}"
+        "ProductCode" = "8:{002816F5-1BCA-4B7A-84F5-FE0841D6D1F7}"
+        "PackageCode" = "8:{1F41E76B-FFBB-47A6-B0FC-1EDB22652A67}"
         "UpgradeCode" = "8:{D7C2CED6-78B2-4575-854C-853DE7E2B811}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:GRÜN Data Recovery"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.data-recovery.de/"

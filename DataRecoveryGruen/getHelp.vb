@@ -73,8 +73,9 @@ Public Class getHelp
                         For Each attr In drive.Value.Attributes
                             If attr.Value.HasData Then
                                 If (attr.Value.Attribute.Contains("emperature")) Then
-                                    'MessageBox.Show(attr.Value.Data.ToString)
-                                    Temperature = attr.Value.Data
+                                    'MessageBox.Show(CInt(“&H” & Strings.Right(Hex(attr.Value.Data), 2)).ToString)
+                                    Temperature = CInt(“&H” & Strings.Right(Hex(attr.Value.Data), 2))
+                                    'convert value into hex, get last 2 values and convert back to decimal
                                 End If
                                 If (attr.Value.Attribute.Equals("Power-on hours count")) Then
                                     'MessageBox.Show(attr.Value.Data.ToString)

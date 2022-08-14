@@ -2261,7 +2261,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:DataRecoveryGruen, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:DataRecoveryGruen, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_78F90C85DA254CC6BFCDC6CBDA0CC466"
@@ -2953,15 +2953,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GRÜN Data Recovery Freeware"
-        "ProductCode" = "8:{002816F5-1BCA-4B7A-84F5-FE0841D6D1F7}"
-        "PackageCode" = "8:{1F41E76B-FFBB-47A6-B0FC-1EDB22652A67}"
+        "ProductCode" = "8:{C93978F5-E6EF-457B-8FEC-F9230A983DF8}"
+        "PackageCode" = "8:{23003DF5-7CBF-408F-AE1F-FDD4DC5A7C4F}"
         "UpgradeCode" = "8:{D7C2CED6-78B2-4575-854C-853DE7E2B811}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.4"
         "Manufacturer" = "8:GRÜN Data Recovery"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.data-recovery.de/"

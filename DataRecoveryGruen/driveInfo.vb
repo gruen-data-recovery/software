@@ -76,8 +76,10 @@ Public Class driveInfo
                         For Each attr In drive.Value.Attributes
                             If attr.Value.HasData Then
                                 If (attr.Value.Attribute.Contains("emperature")) Then
-                                    'MessageBox.Show(attr.Value.Data.ToString)
-                                    Temperature = attr.Value.Data
+                                    'MessageBox.Show(CInt(“&H” & Strings.Right(Hex(attr.Value.Data), 2)).ToString)
+                                    Temperature = CInt(“&H” & Strings.Right(Hex(attr.Value.Data), 2))
+                                    'convert value into hex, get last 2 values and convert back to decimal
+                                    'MessageBox.Show(attr.Value.Attribute)
                                 End If
                                 If (attr.Value.Attribute.Equals("Power-on hours count")) Then
                                     'MessageBox.Show(attr.Value.Data.ToString)
@@ -94,10 +96,6 @@ Public Class driveInfo
 
 
                 Next
-
-                If Temperature > 500 Then
-                    Temperature = -1
-                End If
 
 
                 result.Add(New driveModel() With {.Model = queryObj("Model"), .SerialNumber = queryObj("SerialNumber"), .Partitions = Int32.Parse(queryObj("Partitions")), .DeviceID = queryObj("DeviceID"), .FirmewareVersion = queryObj("FirmwareRevision"), .Laufwerke = laufwerke, .TotalSectors = queryObj("TotalSectors"), .BytesPerSector = queryObj("BytesPerSector"), .TotalBytes = bytes, .TotalGB = gb, .InterfaceType = queryObj("InterfaceType"), .Temperature = Temperature, .PowerOnCount = PowerOnCount, .PowerOnHours = PowerOnHours})
@@ -142,59 +140,67 @@ Public Class driveInfo
 
         ' extract model and interface information
         Dim iDriveIndex As Integer = 0
-        For Each drive As ManagementObject In wdSearcher.Get()
-            Dim hdd = New HDD()
-            Try
-                hdd.Model = drive("Model").ToString().Trim()
-            Catch ex As Exception
-                hdd.Model = "unknown"
-            End Try
-            Try
+        Try
+            For Each drive As ManagementObject In wdSearcher.Get()
+                Dim hdd = New HDD()
+                Try
+                    hdd.Model = drive("Model").ToString().Trim()
+                Catch ex As Exception
+                    hdd.Model = "unknown"
+                End Try
+                Try
 
-                If (drive("InterfaceType") = Nothing) Then
+                    If (drive("InterfaceType") = Nothing) Then
+                        hdd.Type = "unknown"
+                    Else
+                        hdd.Type = drive("InterfaceType").ToString().Trim()
+                    End If
+                Catch ex As Exception
                     hdd.Type = "unknown"
-                Else
-                    hdd.Type = drive("InterfaceType").ToString().Trim()
-                End If
-            Catch ex As Exception
-                hdd.Type = "unknown"
-            End Try
-            Try
-                hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
-            Catch ex As Exception
-                hdd.InstanceName = "unknown"
-            End Try
-            Try
-                hdd.Name = drive("Name").ToString().Trim()
-            Catch ex As Exception
-                hdd.Name = "unknown"
-            End Try
+                End Try
+                Try
+                    hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
+                Catch ex As Exception
+                    hdd.InstanceName = "unknown"
+                End Try
+                Try
+                    hdd.Name = drive("Name").ToString().Trim()
+                Catch ex As Exception
+                    hdd.Name = "unknown"
+                End Try
 
 
-            dicDrives.Add(iDriveIndex, hdd)
-            iDriveIndex += 1
-        Next drive
+                dicDrives.Add(iDriveIndex, hdd)
+                iDriveIndex += 1
+            Next drive
 
+        Catch ex As Exception
+
+        End Try
         Dim pmsearcher = New ManagementObjectSearcher("SELECT * FROM Win32_PhysicalMedia")
 
         ' retrieve hdd serial number
         iDriveIndex = 0
-        For Each drive As ManagementObject In pmsearcher.Get()
-            ' because all physical media will be returned we need to exit
-            ' after the hard drives serial info is extracted
-            If iDriveIndex >= dicDrives.Count Then
-                Exit For
-            End If
-            If (drive("SerialNumber")) Is Nothing Then
-                dicDrives(iDriveIndex).Serial = "None"
-            Else
-                dicDrives(iDriveIndex).Serial = drive("SerialNumber").ToString().Trim()
-            End If
+        Try
+            For Each drive As ManagementObject In pmsearcher.Get()
+                ' because all physical media will be returned we need to exit
+                ' after the hard drives serial info is extracted
+                If iDriveIndex >= dicDrives.Count Then
+                    Exit For
+                End If
+                If (drive("SerialNumber")) Is Nothing Then
+                    dicDrives(iDriveIndex).Serial = "None"
+                Else
+                    dicDrives(iDriveIndex).Serial = drive("SerialNumber").ToString().Trim()
+                End If
 
-            'dicDrives(iDriveIndex).Serial = If(drive("SerialNumber") Is Nothing, "None", drive("SerialNumber").ToString().Trim())
-            iDriveIndex += 1
-        Next drive
+                'dicDrives(iDriveIndex).Serial = If(drive("SerialNumber") Is Nothing, "None", drive("SerialNumber").ToString().Trim())
+                iDriveIndex += 1
+            Next drive
 
+        Catch ex As Exception
+
+        End Try
         ' get wmi access to hdd 
         Dim searcher = New ManagementObjectSearcher("Select * from Win32_DiskDrive")
         searcher.Scope = New ManagementScope("\root\wmi")
@@ -229,93 +235,99 @@ Public Class driveInfo
         ' retrive attribute flags, value worste and vendor data information
         searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictData")
         iDriveIndex = 0
-        For Each data As ManagementObject In searcher.Get()
+        Try
+            For Each data As ManagementObject In searcher.Get()
 
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
-
-
-
-
-                    Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
-                    For i As Integer = 0 To 29
-                        Try
-                            Dim id As Integer = bytes(i * 12 + 2)
-
-                            Dim flags As Integer = bytes(i * 12 + 4) ' least significant status byte, +3 most significant byte, but not used so ignored.
-                            'bool advisory = (flags & 0x1) == 0x0;
-                            Dim failureImminent As Boolean = (flags And &H1) = &H1
-                            'bool onlineDataCollection = (flags & 0x2) == 0x2;
-
-                            Dim value As Integer = bytes(i * 12 + 5)
-                            Dim worst As Integer = bytes(i * 12 + 6)
-                            Dim vendordata As Integer = BitConverter.ToInt32(bytes, i * 12 + 7)
-                            If id = 0 Then
-                                Continue For
-                            End If
-
-                            Dim attr = dicDrives(kvp.Key).Attributes(id)
-                            attr.Current = value
-                            attr.Worst = worst
-                            attr.Data = vendordata
-                            attr.IsOK = failureImminent = False
-                        Catch
-                            ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
-                        End Try
-                    Next i
-                    iDriveIndex += 1
+                For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
+                    If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
 
 
 
 
+                        Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
+                        For i As Integer = 0 To 29
+                            Try
+                                Dim id As Integer = bytes(i * 12 + 2)
 
-                End If
-            Next
+                                Dim flags As Integer = bytes(i * 12 + 4) ' least significant status byte, +3 most significant byte, but not used so ignored.
+                                'bool advisory = (flags & 0x1) == 0x0;
+                                Dim failureImminent As Boolean = (flags And &H1) = &H1
+                                'bool onlineDataCollection = (flags & 0x2) == 0x2;
+
+                                Dim value As Integer = bytes(i * 12 + 5)
+                                Dim worst As Integer = bytes(i * 12 + 6)
+                                Dim vendordata As Integer = BitConverter.ToInt32(bytes, i * 12 + 7)
+                                If id = 0 Then
+                                    Continue For
+                                End If
+
+                                Dim attr = dicDrives(kvp.Key).Attributes(id)
+                                attr.Current = value
+                                attr.Worst = worst
+                                attr.Data = vendordata
+                                attr.IsOK = failureImminent = False
+                            Catch
+                                ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
+                            End Try
+                        Next i
+                        iDriveIndex += 1
 
 
-        Next data
+
+
+
+                    End If
+                Next
+
+
+            Next data
+        Catch ex As Exception
+
+        End Try
 
         ' retreive threshold values foreach attribute
         searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictThresholds")
         iDriveIndex = 0
-        For Each data As ManagementObject In searcher.Get()
+        Try
+            For Each data As ManagementObject In searcher.Get()
 
 
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
-
-
-
-                    Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
-                    For i As Integer = 0 To 29
-                        Try
-
-                            Dim id As Integer = bytes(i * 12 + 2)
-                            Dim thresh As Integer = bytes(i * 12 + 3)
-                            If id = 0 Then
-                                Continue For
-                            End If
-
-                            Dim attr = dicDrives(kvp.Key).Attributes(id)
-                            attr.Threshold = thresh
-                        Catch
-                            ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
-                        End Try
-                    Next i
-
-                    iDriveIndex += 1
+                For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
+                    If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
 
 
 
+                        Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
+                        For i As Integer = 0 To 29
+                            Try
 
-                End If
-            Next
+                                Dim id As Integer = bytes(i * 12 + 2)
+                                Dim thresh As Integer = bytes(i * 12 + 3)
+                                If id = 0 Then
+                                    Continue For
+                                End If
+
+                                Dim attr = dicDrives(kvp.Key).Attributes(id)
+                                attr.Threshold = thresh
+                            Catch
+                                ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
+                            End Try
+                        Next i
+
+                        iDriveIndex += 1
 
 
 
-        Next data
+
+                    End If
+                Next
 
 
+
+            Next data
+        Catch ex As Exception
+
+        End Try
 
         Return dicDrives
 

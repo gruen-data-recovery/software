@@ -12,20 +12,31 @@ Public Class getHelp
 
         Me.Visible = True
         ProgressPanel1.Visible = True
-        Await getAsyncInfo()
-        Me.Close()
+        Try
+            Await getAsyncInfo()
+            Me.Close()
+        Catch ex As Exception
+            run()
+            Me.Visible = False
+            ProgressPanel1.Visible = False
+        End Try
+
 
     End Sub
 
 
     Private Async Function getAsyncInfo() As Threading.Tasks.Task
-        Await Threading.Tasks.Task.Run(Sub()
-                                           run()
 
-                                       End Sub).ConfigureAwait(False)
+        Await Threading.Tasks.Task.Run(Sub()
+                                               run()
+
+                                           End Sub).ConfigureAwait(False)
+
+
     End Function
 
     Private Function run()
+
 
         Dim webAddress As String
         webAddress = "https://www.data-recovery.de/datenrettung-anfragen/?redirect=freeware" + "&os=" + My.Computer.Info.OSPlatform
@@ -34,7 +45,8 @@ Public Class getHelp
 
 
         Dim dicDrives = New Dictionary(Of Integer, HDD)()
-        dicDrives = getAdvancedInformation()
+
+        dicDrives = driveInfo.getAdvancedInformation()
 
 
         Try
@@ -109,7 +121,13 @@ Public Class getHelp
         'https://social.msdn.microsoft.com/Forums/vstudio/en-US/b3577b7a-ea4b-4c90-a3e9-31a9b621469b/accessing-hard-drive-smart-data-from-vb?forum=vbgeneral
 
 
-        Process.Start(webAddress)
+        Try
+            Process.Start(webAddress)
+        Catch ex As Exception
+            MessageBox.Show(Form1.getValue("no_default_browser"))
+        End Try
+
+
 
 
     End Function
@@ -136,181 +154,7 @@ Public Class getHelp
 
     End Function
 
-    Public Function getAdvancedInformation() As Dictionary(Of Integer, HDD)
-        Dim dicDrives = New Dictionary(Of Integer, HDD)()
 
-
-
-        Dim wdSearcher = New ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive")
-
-        ' extract model and interface information
-        Dim iDriveIndex As Integer = 0
-        For Each drive As ManagementObject In wdSearcher.Get()
-            Dim hdd = New HDD()
-            Try
-                hdd.Model = drive("Model").ToString().Trim()
-            Catch ex As Exception
-                hdd.Model = "unknown"
-            End Try
-            Try
-                If (drive("InterfaceType") = Nothing) Then
-                    hdd.Type = "unknown"
-                Else
-                    hdd.Type = drive("InterfaceType").ToString().Trim()
-                End If
-            Catch ex As Exception
-                hdd.Type = "unknown"
-            End Try
-            Try
-                hdd.InstanceName = drive("PNPDeviceID").ToString().Trim() + "_0"
-            Catch ex As Exception
-                hdd.InstanceName = "unknown"
-            End Try
-            Try
-                hdd.Name = drive("Name").ToString().Trim()
-            Catch ex As Exception
-                hdd.Name = "unknown"
-            End Try
-            dicDrives.Add(iDriveIndex, hdd)
-            iDriveIndex += 1
-        Next drive
-
-        Dim pmsearcher = New ManagementObjectSearcher("SELECT * FROM Win32_PhysicalMedia")
-
-        ' retrieve hdd serial number
-        iDriveIndex = 0
-        For Each drive As ManagementObject In pmsearcher.Get()
-            ' because all physical media will be returned we need to exit
-            ' after the hard drives serial info is extracted
-            If iDriveIndex >= dicDrives.Count Then
-                Exit For
-            End If
-            If (drive("SerialNumber")) Is Nothing Then
-                dicDrives(iDriveIndex).Serial = "None"
-            Else
-                dicDrives(iDriveIndex).Serial = drive("SerialNumber").ToString().Trim()
-            End If
-
-            'dicDrives(iDriveIndex).Serial = If(drive("SerialNumber") Is Nothing, "None", drive("SerialNumber").ToString().Trim())
-            iDriveIndex += 1
-        Next drive
-
-        ' get wmi access to hdd 
-        Dim searcher = New ManagementObjectSearcher("Select * from Win32_DiskDrive")
-        searcher.Scope = New ManagementScope("\root\wmi")
-
-        ' check if SMART reports the drive is failing
-        searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictStatus")
-        iDriveIndex = 0
-        For Each drive As ManagementObject In searcher.Get()
-
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(drive.Properties("InstanceName").Value))) Then
-                    dicDrives(kvp.Key).IsOK = DirectCast(drive.Properties("PredictFailure").Value, Boolean) = False
-                End If
-            Next
-
-
-
-
-            iDriveIndex += 1
-        Next drive
-
-        ' retrive attribute flags, value worste and vendor data information
-        searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictData")
-        iDriveIndex = 0
-        For Each data As ManagementObject In searcher.Get()
-
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
-
-
-
-
-                    Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
-                    For i As Integer = 0 To 29
-                        Try
-                            Dim id As Integer = bytes(i * 12 + 2)
-
-                            Dim flags As Integer = bytes(i * 12 + 4) ' least significant status byte, +3 most significant byte, but not used so ignored.
-                            'bool advisory = (flags & 0x1) == 0x0;
-                            Dim failureImminent As Boolean = (flags And &H1) = &H1
-                            'bool onlineDataCollection = (flags & 0x2) == 0x2;
-
-                            Dim value As Integer = bytes(i * 12 + 5)
-                            Dim worst As Integer = bytes(i * 12 + 6)
-                            Dim vendordata As Integer = BitConverter.ToInt32(bytes, i * 12 + 7)
-                            If id = 0 Then
-                                Continue For
-                            End If
-
-                            Dim attr = dicDrives(kvp.Key).Attributes(id)
-                            attr.Current = value
-                            attr.Worst = worst
-                            attr.Data = vendordata
-                            attr.IsOK = failureImminent = False
-                        Catch
-                            ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
-                        End Try
-                    Next i
-                    iDriveIndex += 1
-
-
-
-
-
-                End If
-            Next
-
-
-        Next data
-
-        ' retreive threshold values foreach attribute
-        searcher.Query = New ObjectQuery("Select * from MSStorageDriver_FailurePredictThresholds")
-        iDriveIndex = 0
-        For Each data As ManagementObject In searcher.Get()
-
-
-            For Each kvp As KeyValuePair(Of Integer, HDD) In dicDrives
-                If (dicDrives(kvp.Key).InstanceName.Equals(UCase(data.Properties("InstanceName").Value))) Then
-
-
-
-                    Dim bytes() As Byte = DirectCast(data.Properties("VendorSpecific").Value, Byte())
-                    For i As Integer = 0 To 29
-                        Try
-
-                            Dim id As Integer = bytes(i * 12 + 2)
-                            Dim thresh As Integer = bytes(i * 12 + 3)
-                            If id = 0 Then
-                                Continue For
-                            End If
-
-                            Dim attr = dicDrives(kvp.Key).Attributes(id)
-                            attr.Threshold = thresh
-                        Catch
-                            ' given key does not exist in attribute collection (attribute not in the dictionary of attributes)
-                        End Try
-                    Next i
-
-                    iDriveIndex += 1
-
-
-
-
-                End If
-            Next
-
-
-
-        Next data
-
-
-
-        Return dicDrives
-
-
-    End Function
 
 
 

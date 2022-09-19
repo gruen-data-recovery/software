@@ -312,4 +312,7 @@
   <data name="send_drive_information" xml:space="preserve">
     <value>Send drive data with request</value>
   </data>
+  <data name="no_default_browser" xml:space="preserve">
+    <value>No default browser was found!</value>
+  </data>
 </root>

@@ -175,7 +175,7 @@ Public Class driveInfo
             Next drive
 
         Catch ex As Exception
-
+            MessageBox.Show("1")
         End Try
         Dim pmsearcher = New ManagementObjectSearcher("SELECT * FROM Win32_PhysicalMedia")
 

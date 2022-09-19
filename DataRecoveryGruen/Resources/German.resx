@@ -312,4 +312,7 @@
   <data name="send_drive_information" xml:space="preserve">
     <value>Laufwerkdaten bei Anfrage mitsenden</value>
   </data>
+  <data name="no_default_browser" xml:space="preserve">
+    <value>Es konnte kein Standardbrowser gefunden werden!</value>
+  </data>
 </root>

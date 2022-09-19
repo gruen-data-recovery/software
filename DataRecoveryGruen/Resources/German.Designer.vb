@@ -344,6 +344,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Es konnte kein Standardbrowser gefunden werden! ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property no_default_browser() As String
+            Get
+                Return ResourceManager.GetString("no_default_browser", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die Sie können die Sprache wärend eines scannes nicht ändern ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property no_language_change_while_scan() As String
